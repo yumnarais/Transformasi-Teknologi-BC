@@ -39,12 +39,12 @@
             position: relative; z-index: 10; max-width: 56rem; text-align: center;
             margin: auto 0; display: flex; flex-direction: column; gap: 0.5rem;
         }
-        .judul-utama { font-size: 2.5rem; font-weight: 800; line-height: 1.1; color: #ffffff; }
-        @media (min-width: 640px) { .judul-utama { font-size: 2.75rem; } }
+        .judul-utama { font-size: 24pt; font-weight: 800; line-height: 1.1; color: #ffffff; }
+        @media (min-width: 640px) { .judul-utama { font-size: 24pt; } }
         .sub-judul { font-size: 1.33rem; font-weight: 500; color: #ffffff; text-transform: uppercase; }
-        @media (min-width: 640px) { .sub-judul { font-size: 1.5rem; } }
+        @media (min-width: 640px) { .sub-judul { font-size: 20pt; } }
         .deskripsi-narasi {
-            font-size: 1.33rem; color: #cbd5e1; max-width: 42rem; margin: 0.5rem auto 0 auto;
+            font-size: 16pt; color: #cbd5e1; max-width: 42rem; margin: 0.5rem auto 0 auto;
             line-height: 1.6; background-color: rgba(0, 0, 0, 0.6); padding: 1rem;
             border-radius: 0.75rem; border: 1px solid rgba(255, 255, 255, 0.05);
         }
@@ -60,9 +60,9 @@
         }
         .btn-info:hover { transform: scale(1.05); background-color: #334155; }
         .btn-utama {
-            padding: 1.25rem 3rem; background: linear-gradient(to right, #f97316, #f59e0b);
+            padding: 1.33rem 3rem; background: linear-gradient(to right, #f97316, #f59e0b);
             color: #ffffff; border: none; border-radius: 9999px; font-size: 1.25rem;
-            font-weight: 900; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
         }
         .btn-utama:hover { transform: scale(1.08); box-shadow: 0 0 25px rgba(249, 115, 22, 0.6); }
 
@@ -71,8 +71,8 @@
             position: fixed; inset: 0; z-index: 50; background-color: rgba(0, 0, 0, 0.85);
             display: none; align-items: center; justify-content: center; padding: 1rem;
         }
-        .popup-box { background-color: #0f172a; border: 1px solid #334155; border-radius: 1rem; max-width: 32rem; width: 100%; padding: 1.5rem; color: #f1f5f9; }
-        .popup-header { font-size: 1.25rem; font-weight: 700; padding-bottom: 0.75rem; border-bottom: 1px solid #1e293b; margin-bottom: 1rem; }
+        .popup-box { background-color: #0f172a; border: 1px solid #334155; border-radius: 1rem; max-width: 50rem; width: 100%; padding: 1.5rem; color: #f1f5f9; }
+        .popup-header { font-size: 16pt; font-weight: 700; padding-bottom: 0.75rem; border-bottom: 1px solid #1e293b; margin-bottom: 1rem; }
         .popup-tujuan-title { color: #ffffff; }
         .popup-petunjuk-title { color: #ffffff; }
         .popup-list { margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 1.33rem; text-align: left; }
@@ -87,12 +87,12 @@
 .dash-header { display: flex; justify-content: space-between; align-items: flex-start; background-color: #1A0E4A; padding: 1.5rem; border-radius: 1rem; border: 1px solid #e2e8f0; position: relative; }
         .dash-welcome h2 { font-size: 1.5rem; font-weight: 800; color: #574991; margin-bottom: 0.25rem; }
         .dash-welcome p { font-size: 1.33rem; color: #ffffff; max-width: 52rem; line-height: 1.5; }
-        .btn-mini-beranda { padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s; }
+        .btn-mini-beranda { padding: 0.4rem 0.8rem; font-size: 0.75rem; font-weight: 700; background-color:#1A0E4A ; color: #475569; border: 1px solid #cbd5e1; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s; }
         .btn-mini-beranda:hover { background-color: #e2e8f0; color: #0f172a; }
         
         .top-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
         @media (min-width: 1024px) { .top-grid { grid-template-columns: 1.2fr 1fr; } }
-        .dash-card { background: #ffffff; border-radius: 1rem; padding: 1rem; border: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 0.5rem; }
+        .dash-card { background:#574991 ; border-radius: 1rem; padding: 1rem; border: 1px solid #e2e8f0; display: flex; flex-direction: column; gap: 0.5rem; }
         .card-sec-title { font-size: 1.33rem; font-weight: 500; text-transform: uppercase; color: #64748b; letter-spacing: 0.05em; display: flex; align-items: center; gap: 0.5rem; }
         
         /* PROGRESS RING — hanya berupa bingkai/garis, bukan lingkaran solid */
@@ -607,9 +607,761 @@ body.m3-overlay-open{overflow:hidden;}
 .quiz-feedback-agent.correct{background:rgba(34,197,94,.16);border:1.5px solid #22c55e;}
 .quiz-feedback-agent.wrong{background:rgba(239,68,68,.16);border:1.5px solid #ef4444;}
 .quiz-feedback-agent .qfb-title{font-size:12pt;font-weight:900;}
-.quiz-feedback-agent .qfb-text{font-size:o.85pt;line-height:1.35;margin-top:.12rem;}
+.quiz-feedback-agent .qfb-text{font-size:0.85pt;line-height:1.35;margin-top:.12rem;}
 @media(max-width:900px){.m4-row-main{grid-template-columns:1fr!important;}#sub-refleksi.refleksi-final .ref-main-grid{grid-template-columns:1fr!important;}#sub-refleksi.refleksi-final #cetak-area-sertifikat{width:min(100%,620px)!important;}.m4-bottom-grid{grid-template-columns:1fr 1fr!important;}}
 @media(max-width:560px){.m4-bottom-grid{grid-template-columns:1fr!important;}.ref-download-grid{grid-template-columns:1fr;}}
+/* =========================================================
+   DASHBOARD FINAL FIX
+   HANYA PERBAIKAN VISUAL — TIDAK MENGUBAH NAVIGASI
+   ========================================================= */
+
+/* ---------- 1. UKURAN SEMUA KARTU DASHBOARD ---------- */
+
+/* Kartu Misi 1–4 */
+.misi-grid .card-misi {
+    height: 200px !important;
+    min-height: 185px !important;
+    max-height: 200px !important;
+    box-sizing: border-box !important;
+    padding: 0.75rem !important;
+}
+
+/* Kartu Final Mission, Evaluasi, Refleksi, Badge */
+.bottom-layout-4col .card-misi {
+    height: 200px !important;
+    min-height: 185px !important;
+    max-height: 200px !important;
+    box-sizing: border-box !important;
+    padding: 0.75rem !important;
+}
+
+/* ---------- 2. LABEL "MISI 1–4" MENJADI OVAL ---------- */
+
+.misi-number {
+    width: auto !important;
+    min-width: 72px !important;
+    height: 30px !important;
+    padding: 0 14px !important;
+
+    border-radius: 9999px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 16px !important;
+    line-height: 1 !important;
+    font-weight: 800 !important;
+
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25) !important;
+}
+
+/* Warna masing-masing label */
+.misi-number.m1 {
+    background: #e2f9ec !important;
+    color: #15803d !important;
+}
+
+.misi-number.m2 {
+    background: #e0f2fe !important;
+    color: #0369a1 !important;
+}
+
+.misi-number.m3 {
+    background: #f3e8ff !important;
+    color: #6b21a8 !important;
+}
+
+.misi-number.m4 {
+    background: #f0fdf4 !important;
+    color: #166534 !important;
+}
+
+
+/* ---------- 3. JUDUL KARTU ---------- */
+
+.misi-title {
+    font-size: 18pt !important;
+    line-height: 1.15 !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    margin-bottom: 0.35rem !important;
+}
+
+
+/* ---------- 4. DESKRIPSI / STATUS ---------- */
+
+.misi-percentage {
+    color: #ffffff !important;
+    font-size: 16pt !important;
+    line-height: 1.15 !important;
+    font-weight: 700 !important;
+}
+
+
+/* ---------- 5. BAR PROGRESS ---------- */
+
+.misi-bar-bg {
+    height: 7px !important;
+    width: 100% !important;
+    border-radius: 9999px !important;
+    overflow: hidden !important;
+}
+
+.misi-bar-fill {
+    height: 100% !important;
+    border-radius: 9999px !important;
+}
+
+
+/* ---------- 6. TOMBOL TIDAK TERPOTONG ---------- */
+
+.misi-status-box {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.35rem !important;
+    padding-top: 0.35rem !important;
+}
+
+.btn-aksi-misi {
+    width: 100% !important;
+    min-height: 34px !important;
+    height: 34px !important;
+
+    padding: 0.35rem 0.65rem !important;
+
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+
+    border-radius: 9999px !important;
+
+    font-size: 16pt !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+
+    color: #ffffff !important;
+
+    white-space: nowrap !important;
+    overflow: visible !important;
+}
+
+
+/* ---------- 7. JUDUL KARTU BAWAH ---------- */
+
+.bottom-layout-4col .card-misi > div:first-child {
+    font-size: 17pt !important;
+    color: #ffffff !important;
+    line-height: 1.15 !important;
+    font-weight: 600 !important;
+}
+
+.bottom-layout-4col .card-misi > div:nth-child(2) {
+    font-size: 16pt !important;
+    color: #ffffff !important;
+    line-height: 1.25 !important;
+}
+
+
+/* ---------- 8. SEMUA TEKS DASHBOARD PUTIH ---------- */
+
+#sub-dashboard,
+#sub-dashboard p,
+#sub-dashboard span,
+#sub-dashboard div,
+#sub-dashboard strong,
+#sub-dashboard h1,
+#sub-dashboard h2,
+#sub-dashboard h3,
+#sub-dashboard h4,
+#sub-dashboard label {
+    color: #ffffff;
+}
+
+
+/* ---------- 9. KECUALIKAN PROGRESS RING ---------- */
+
+#sub-dashboard .progress-text h4,
+#sub-dashboard .progress-text p {
+    color: #ffffff !important;
+}
+
+
+/* ---------- 10. KARTU PROGRESS BELAJAR ---------- */
+
+#sub-dashboard .dash-card {
+    background: #1e3a8a !important;
+    border: 1px solid rgba(255,255,255,0.7) !important;
+    color: #ffffff !important;
+}
+
+#sub-dashboard .progress-box {
+    background: transparent !important;
+    color: #ffffff !important;
+}
+
+
+/* Judul Progress Belajar */
+#sub-dashboard .card-sec-title {
+    color: #ffffff !important;
+    font-size: 14pt !important;
+    font-weight: 600 !important;
+}
+
+
+/* Angka persen */
+#sub-dashboard #circle-progress-label {
+    color: #ffffff !important;
+    font-weight: 900 !important;
+}
+
+
+/* ---------- 11. TOMBOL BERANDA ---------- */
+
+#sub-dashboard .btn-mini-beranda {
+    color: #ffffff !important;
+    background: rgba(255,255,255,0.12) !important;
+    border: 1px solid rgba(255,255,255,0.5) !important;
+}
+
+
+/* ---------- 12. JUDUL "PILIH MISI" ---------- */
+
+#sub-dashboard .misi-section-title {
+    color: #ffffff !important;
+    font-size: 17pt !important;
+    font-weight: 800 !important;
+}
+
+
+/* ---------- 13. RESPONSIVE ---------- */
+
+@media (max-width: 1100px) {
+
+    .misi-grid .card-misi,
+    .bottom-layout-4col .card-misi {
+        height: 190px !important;
+        min-height: 190px !important;
+        max-height: 190px !important;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .misi-grid .card-misi,
+    .bottom-layout-4col .card-misi {
+        height: auto !important;
+        min-height: 185px !important;
+        max-height: none !important;
+    }
+
+    .misi-title {
+        font-size: 17pt !important;
+    }
+
+    .misi-percentage {
+        font-size: 16pt !important;
+    }
+
+    .btn-aksi-misi {
+        font-size: 16pt !important;
+    }
+}
+/* =========================================================
+   M1 FINAL UI FIX
+   Tidak mengubah ID maupun navigasi
+   ========================================================= */
+
+/* ---------- HALAMAN MISI 1 ---------- */
+#sub-misi1.misi1-page {
+    height: 100vh !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    position: relative;
+}
+
+/* ---------- HEADER MISI 1 ---------- */
+#sub-misi1 .m1-header {
+    position: relative !important;
+    min-height: 5.8rem;
+    padding-right: 10.5rem !important;
+}
+
+/* Agent Nisa diperbesar agar proporsional dengan header */
+#sub-misi1 .m1-agent {
+    height: 5.4rem !important;
+    width: auto !important;
+    max-height: 5.4rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ---------- TOMBOL DASHBOARD GLOBAL ----------
+   Gunakan class ini juga pada halaman-halaman berikutnya.
+*/
+.btn-dashboard-global {
+    position: absolute !important;
+    top: 0.65rem !important;
+    right: 0.75rem !important;
+
+    background: #2563eb !important;
+    color: #ffffff !important;
+
+    border: 1px solid #60a5fa !important;
+    border-radius: 0.55rem !important;
+
+    padding: 0.55rem 1rem !important;
+
+    min-width: 7.5rem;
+    min-height: 2.5rem;
+
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.4rem;
+
+    cursor: pointer;
+    z-index: 20;
+
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-dashboard-global:hover {
+    background: #1d4ed8 !important;
+    transform: translateY(-1px);
+}
+
+/* ---------- JUDUL RINGKASAN ---------- */
+#sub-misi1 .m1-summary-title {
+    display: block;
+    width: 100%;
+    line-height: 1.25;
+}
+
+#sub-misi1 .m1-summary-title small {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* ---------- AREA UTAMA ----------
+   Memberikan ruang khusus untuk footer sehingga
+   footer tidak lagi masuk/menimpa kotak timeline.
+*/
+#sub-misi1 .m1-main {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Kolom kiri harus boleh mengecil mengikuti ruang */
+#sub-misi1 .m1-main > div {
+    min-height: 0;
+}
+
+/* Timeline tidak boleh tertutup footer */
+#sub-misi1 #timeline-misi1 {
+    position: relative;
+    z-index: 2;
+    touch-action: none;
+}
+
+/* Kartu timeline */
+#sub-misi1 #timeline-misi1 .drag-item {
+    position: relative;
+    z-index: 3;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* ---------- WARNA FEEDBACK TIMELINE ----------
+   Hijau = benar
+   Merah = salah
+*/
+#sub-misi1 #timeline-misi1 .drag-item.urutan-benar {
+    background: rgba(34, 197, 94, 0.28) !important;
+    border-color: #22c55e !important;
+    color: #dcfce7 !important;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.18);
+}
+
+#sub-misi1 #timeline-misi1 .drag-item.urutan-salah {
+    background: rgba(239, 68, 68, 0.28) !important;
+    border-color: #ef4444 !important;
+    color: #fee2e2 !important;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.18);
+}
+
+/* ---------- FOOTER NAVIGASI ---------- */
+#sub-misi1 .m1-footer {
+    position: relative !important;
+    z-index: 100 !important;
+    flex: 0 0 auto !important;
+
+    min-height: 3.5rem;
+
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    padding: 0.3rem 0 0.1rem !important;
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Tombol navigasi berubah menjadi tombol berbasis gambar */
+#sub-misi1 .m1-back-btn,
+#sub-misi1 .m1-next-btn {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+/* Gambar tombol kembali & lanjut */
+#sub-misi1 .m1-nav-image {
+    display: block;
+    height: 2.8rem;
+    width: auto;
+    max-width: 11rem;
+    object-fit: contain;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#sub-misi1 .m1-back-btn:hover .m1-nav-image,
+#sub-misi1 .m1-next-btn:hover .m1-nav-image {
+    transform: scale(1.05);
+    filter: brightness(1.12);
+}
+
+/* ---------- FEEDBACK KUIS ---------- */
+.quiz-feedback-agent.correct {
+    background: rgba(34, 197, 94, 0.20) !important;
+    border: 1.5px solid rgba(34, 197, 94, 0.75) !important;
+}
+
+.quiz-feedback-agent.wrong {
+    background: rgba(239, 68, 68, 0.20) !important;
+    border: 1.5px solid rgba(239, 68, 68, 0.75) !important;
+}
+
+.quiz-feedback-agent.correct .qfb-title {
+    color: #4ade80 !important;
+}
+
+.quiz-feedback-agent.wrong .qfb-title {
+    color: #f87171 !important;
+}
+
+/* Feedback belum lengkap */
+#sub-misi1 .quiz-unanswered {
+    background: rgba(234, 179, 8, 0.18);
+    border: 1px solid rgba(234, 179, 8, 0.65);
+    color: #fde68a;
+    border-radius: 0.5rem;
+    padding: 0.55rem;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 900px) {
+
+    #sub-misi1.misi1-page {
+        height: auto !important;
+        min-height: 100vh !important;
+        overflow-y: auto !important;
+    }
+
+    #sub-misi1 .m1-header {
+        padding-right: 0.75rem !important;
+    }
+
+    #sub-misi1 .m1-agent {
+        height: 4.5rem !important;
+    }
+
+    .btn-dashboard-global {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        align-self: flex-end;
+        margin-bottom: 0.2rem;
+    }
+
+    #sub-misi1 .m1-main {
+        overflow: visible !important;
+    }
+
+    #sub-misi1 .m1-footer {
+        position: relative !important;
+    }
+
+    #sub-misi1 .m1-nav-image {
+        height: 2.5rem;
+    }
+}
+/* =========================================================
+   FIX WARNA TIMELINE MISI 1
+   JavaScript lama TETAP DIGUNAKAN
+   ========================================================= */
+
+/* Jawaban benar */
+#timeline-misi1 .drag-item.urutan-benar {
+    background: rgba(34, 197, 94, 0.28) !important;
+    border-color: #22c55e !important;
+    border-style: solid !important;
+    color: #dcfce7 !important;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.25) !important;
+}
+
+/* Jawaban salah */
+#timeline-misi1 .drag-item.urutan-salah {
+    background: rgba(239, 68, 68, 0.28) !important;
+    border-color: #ef4444 !important;
+    border-style: solid !important;
+    color: #fee2e2 !important;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.25) !important;
+}
+
+/* =========================================================
+   KUIS FORMATIF MISI 1–4
+   FONT 16PT + FEEDBACK PADA KOTAK SOAL
+   ========================================================= */
+
+.kuis-soal-box {
+    font-size: 16pt !important;
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.kuis-soal-teks {
+    font-size: 16pt !important;
+    line-height: 1.35 !important;
+}
+
+.kuis-opsi-label {
+    font-size: 16pt !important;
+    line-height: 1.35 !important;
+}
+
+/* Jawaban benar */
+.kuis-soal-box.jawaban-benar {
+    background: rgba(34, 197, 94, 0.20) !important;
+    border: 1.5px solid rgba(34, 197, 94, 0.75) !important;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.15);
+}
+
+/* Jawaban salah */
+.kuis-soal-box.jawaban-salah {
+    background: rgba(239, 68, 68, 0.20) !important;
+    border: 1.5px solid rgba(239, 68, 68, 0.75) !important;
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.15);
+}
+
+/* Hasil akhir kuis */
+#kuis-misi1-hasil,
+#kuis-misi2-hasil,
+#kuis-misi3-hasil,
+#kuis-misi4-hasil {
+    font-size: 16pt !important;
+    line-height: 1.35 !important;
+}
+
+.quiz-feedback-agent .qfb-title {
+    font-size: 16pt !important;
+    line-height: 1.3 !important;
+}
+
+.quiz-feedback-agent .qfb-text {
+    font-size: 16pt !important;
+    line-height: 1.35 !important;
+}
+/* =========================================================
+   MISI 2 - HEADER & NAVIGASI
+   ========================================================= */
+
+.misi2-agent {
+    height: 5rem !important;
+    width: auto !important;
+    flex-shrink: 0;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+}
+
+.misi2-dashboard {
+    background: #2563eb !important;
+    color: #ffffff !important;
+    border: 1px solid #60a5fa !important;
+    border-radius: 0.55rem !important;
+    padding: 0.55rem 1rem !important;
+    min-width: 7.5rem;
+    min-height: 2.5rem;
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 4px 12px rgba(37,99,235,0.35);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.misi2-dashboard:hover {
+    background: #1d4ed8 !important;
+    transform: scale(1.04);
+}
+
+.misi2-nav-image {
+    height: 2.25rem;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.misi2-nav-button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.misi2-nav-button:hover {
+    transform: scale(1.05);
+}
+
+/* Video Misi 2 */
+.misi2-video-wrapper {
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: #000000;
+}
+
+.misi2-video {
+    width: 100%;
+    max-height: 220px;
+    display: block;
+    border-radius: 0.5rem;
+    object-fit: contain;
+}
+
+/* Gambar ringkasan yang bisa diperbesar */
+.misi2-summary-image {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.misi2-summary-image:hover {
+    transform: scale(1.015);
+}
+/* =========================================================
+   ZOOM INFOGRAFIS MISI 2
+   ========================================================= */
+
+.misi2-image-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0,0,0,0.92) !important;
+    backdrop-filter: blur(8px);
+    z-index: 99999 !important;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.misi2-image-overlay.show {
+    display: flex !important;
+}
+
+.misi2-image-overlay img {
+    max-width: 92vw;
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0.6rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    border: 1px solid rgba(255,255,255,0.25);
+    cursor: zoom-in;
+    transition: transform 0.25s ease;
+}
+
+.misi2-image-overlay img.zoomed {
+    transform: scale(1.5);
+    cursor: zoom-out;
+}
+
+.misi2-zoom-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #ef4444;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    z-index: 100001;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.misi2-zoom-hint {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    background: rgba(15,23,42,0.85);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 999px;
+    padding: 0.4rem 0.8rem;
+    font-size: 11pt;
+    white-space: nowrap;
+}
+/* Memastikan modal zoom gambar berada di atas seluruh halaman */
+#modal-zoom-gambar {
+    z-index: 99999 !important;
+    display: none;
+}
+
+#modal-zoom-gambar[style*="display: flex"] {
+    display: flex !important;
+}
 </style>
 </head>
 <body>
@@ -672,8 +1424,8 @@ body.m3-overlay-open{overflow:hidden;}
 
     <!-- POPUP KUIS FORMATIF MISI 1 -->
     <div id="popup-kuis-misi1" class="popup-overlay" onclick="tutupPopup('popup-kuis-misi1')">
-        <div class="popup-box" onclick="event.stopPropagation()" style="max-width: 36rem;">
-            <div class="popup-header popup-tujuan-title">📝 Kuis Formatif Misi 1</div>
+<div class="popup-box" onclick="event.stopPropagation()" style="max-width: 55rem; max-height: 85vh; overflow-y: auto; box-sizing: border-box;">
+                 <div class="popup-header popup-tujuan-title">📝 Kuis Formatif Misi 1</div>
 
             <div class="kuis-soal-box">
                 <div class="kuis-soal-teks">1. Sistem modulasi apa yang digunakan pada siaran radio analog?</div>
@@ -697,8 +1449,8 @@ body.m3-overlay-open{overflow:hidden;}
             </div>
 
             <div id="kuis-misi1-hasil" class="hidden"></div>
-
-            <div style="display:flex; gap:0.5rem; margin-top: 0.5rem;">
+<div id="kuis-misi1-hasil" class="hidden" style="margin-top: 0.25rem;"></div>
+            
                 <button onclick="periksaKuisMisi1()" class="btn-tutup" style="background-color:#22c55e; flex:1;">Kirim Jawaban</button>
                 <button onclick="tutupPopup('popup-kuis-misi1')" class="btn-tutup" style="background-color:#475569; flex:1;">Tutup</button>
             </div>
@@ -707,8 +1459,8 @@ body.m3-overlay-open{overflow:hidden;}
 
     <!-- POPUP KUIS FORMATIF MISI 2 -->
     <div id="popup-kuis-misi2" class="popup-overlay" onclick="tutupPopup('popup-kuis-misi2')">
-        <div class="popup-box" onclick="event.stopPropagation()" style="max-width: 36rem;">
-            <div class="popup-header" style="color:#34d399;">📝 Kuis Formatif Misi 2</div>
+<div class="popup-box" onclick="event.stopPropagation()" style="max-width: 55rem; max-height: 85vh; overflow-y: auto; box-sizing: border-box;">
+                   <div class="popup-header" style="color:#34d399;">📝 Kuis Formatif Misi 2</div>
 
             <div class="kuis-soal-box">
                 <div class="kuis-soal-teks">1. Apa yang dimaksud dengan media digital?</div>
@@ -742,7 +1494,7 @@ body.m3-overlay-open{overflow:hidden;}
 
     <!-- POPUP KUIS FORMATIF MISI 3 -->
     <div id="popup-kuis-misi3" class="popup-overlay" onclick="tutupPopup('popup-kuis-misi3')">
-        <div class="popup-box" onclick="event.stopPropagation()" style="max-width: 36rem;">
+         <div class="popup-box" onclick="event.stopPropagation()" style="max-width: 55rem; max-height: 85vh; overflow-y: auto; box-sizing: border-box;">
             <div class="popup-header" style="color:#60a5fa;">📝 Kuis Formatif Misi 3</div>
 
             <div class="kuis-soal-box">
@@ -777,7 +1529,7 @@ body.m3-overlay-open{overflow:hidden;}
 
     <!-- POPUP KUIS FORMATIF MISI 4 -->
     <div id="popup-kuis-misi4" class="popup-overlay" onclick="tutupPopup('popup-kuis-misi4')">
-        <div class="popup-box" onclick="event.stopPropagation()" style="max-width: 36rem;">
+       <div class="popup-box" onclick="event.stopPropagation()" style="max-width: 55rem; max-height: 85vh; overflow-y: auto; box-sizing: border-box;">
             <div class="popup-header" style="color:#34d399;">📝 Kuis Formatif Misi 4</div>
 
             <div class="kuis-soal-box">
@@ -834,8 +1586,8 @@ body.m3-overlay-open{overflow:hidden;}
                 </div>
                 <!-- 2). Balon Sapaan Agent -->
 
-                      <div style="background: #f1f5f9; border-radius: 0.75rem; padding: 0.5rem 0.75rem; border-left: 4px solid #2563eb;">
-                    <p style="font-size: 1.33rem; color: #2563EB; line-height: 1.3; margin: 0;">
+                      <div style="background: #0041C2; border-radius: 0.75rem; padding: 0.5rem 0.75rem; border-left: 4px solid #2563eb;">
+                    <p style="font-size: 1.33rem; color: #ffffff; line-height: 1.3; margin: 0;">
                         <strong>👋</strong> "Pernahkah kamu berpikir bagaimana manusia membuat dan menikmati film dari masa ke masa? Pilih misi yang ingin kamu pelajari di bawah ini!" 🚀
                     </p>
                 </div>
@@ -846,7 +1598,7 @@ body.m3-overlay-open{overflow:hidden;}
         <div class="dash-card" style="display: flex; flex-direction: column; justify-content: space-between; padding: 0.75rem; position: relative;">
             <!-- 4). Header Progress & Tombol Beranda -->
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
-                <div class="card-sec-title" style="font-size: 0.75rem; margin: 0;">📈 Progress Belajar</div>
+                <div class="card-sec-title" style="font-size: 1rem; margin: 0;">📈 Progress Belajar</div>
                 <button class="btn-mini-beranda" onclick="pindahHalaman('page-beranda')" style="padding: 0.25rem 0.55rem; font-size: 0.7rem;">🏠 Beranda</button>
             </div>
 
@@ -887,12 +1639,12 @@ body.m3-overlay-open{overflow:hidden;}
 
     <!-- 3. Layer Konten Teks & Tombol (Bertumpuk di Depan) -->
     <div style="position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: flex-start;">
-        <div class="misi-number m1" style="box-shadow: 0 4px 6px rgba(0,0,0,0.3);">1</div>
+        <div class="misi-number m1" style="box-shadow: 0 4px 6px rgba(0,0,0,0.3);">Misi 1</div>
         <div class="label-rekomendasi" id="label-rekom-1" style="position: static;">Direkomendasikan</div>
     </div>
 
     <div style="position: relative; z-index: 3;">
-        <div class="misi-title" style="font-size: 1.33rem; font-weight: 800; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Misi 1</div>
+        <div class="misi-title" style="font-size: 1.33rem; font-weight: 600; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Perkembangan Teknologi</div>
         <div class="misi-status-box" style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 0.4rem;">
             <div class="misi-percentage" id="misi1-percentage" style="color: #cbd5e1; font-size: 0.65rem;">0% Belum Dimulai</div>
             <div class="misi-bar-bg" style="background: rgba(255,255,255,0.2);"><div class="misi-bar-fill" id="misi1-bar-fill" style="width:0%; background:#22c55e;"></div></div>
@@ -903,7 +1655,7 @@ body.m3-overlay-open{overflow:hidden;}
 </div>
   
     <!-- MISI 2 -->
- <div class="card-misi" id="card-misi-2" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi2');" style="position: relative; overflow: hidden; border-radius: 0.85rem; height: 160px; display: flex; flex-direction: column; justify-content: space-between; padding: 0.75rem; background: #0f172a;">
+ <div class="card-misi" id="card-misi-2" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi2');" style="position: relative; overflow: hidden; border-radius: 0.85rem; height: 200px; display: flex; flex-direction: column; justify-content: space-between; padding: 0.75rem; background: #0f172a;">
   
      <!-- 1. Layer Gambar Utuh (object-fit: contain) -->
     <img src="images/digital.png" alt="Digital"  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; z-index: 1; opacity: 0.5;">   
@@ -911,11 +1663,11 @@ body.m3-overlay-open{overflow:hidden;}
         <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 20%, rgba(15, 23, 42, 0.4) 100%); z-index: 2;"></div>
 
         <div style="position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: flex-start;">
-            <div class="misi-number m2" style="box-shadow: 0 2px 6px rgba(0,0,0,0.3);">2</div>
+            <div class="misi-number m2" style="box-shadow: 0 2px 6px rgba(0,0,0,0.3);">Misi 2</div>
         </div>
 
         <div style="position: relative; z-index: 3;">
-            <div class="misi-title" style="font-size: 1.33rem; font-weight: 800; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Misi 2</div>
+            <div class="misi-title" style="font-size: 1.33rem; font-weight: 600; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Media digital</div>
             <div class="misi-status-box" style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 0.4rem;">
                 <div class="misi-percentage" id="misi2-percentage" style="color: #cbd5e1; font-size: 0.65rem;">0% Belum Dimulai</div>
                 <div class="misi-bar-bg" style="background: rgba(255,255,255,0.2);"><div class="misi-bar-fill" id="misi2-bar-fill" style="width:0%;"></div></div>
@@ -925,7 +1677,7 @@ body.m3-overlay-open{overflow:hidden;}
     </div>
 
     <!-- MISI 3 -->
-   <div class="card-misi" id="card-misi-3" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi3');" style="position: relative; overflow: hidden; border-radius: 0.85rem; height: 160px; display: flex; flex-direction: column; justify-content: space-between; padding: 0.75rem; background: #0f172a;">  
+   <div class="card-misi" id="card-misi-3" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi3');" style="position: relative; overflow: hidden; border-radius: 0.85rem; height: 200px; display: flex; flex-direction: column; justify-content: space-between; padding: 0.75rem; background: #0f172a;">  
 
       <!-- 1. Layer Gambar Utuh (object-fit: contain) -->
     <img src="images/media_sosial.png" alt="Medsos"  style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; z-index: 1; opacity: 0.5;">   
@@ -933,11 +1685,11 @@ body.m3-overlay-open{overflow:hidden;}
         <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 20%, rgba(15, 23, 42, 0.4) 100%); z-index: 2;"></div>
 
         <div style="position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: flex-start;">
-            <div class="misi-number m3" style="box-shadow: 0 2px 6px rgba(0,0,0,0.3);">3</div>
+            <div class="misi-number m3" style="box-shadow: 0 2px 6px rgba(0,0,0,0.3);">Misi 3</div>
         </div>
 
         <div style="position: relative; z-index: 3;">
-            <div class="misi-title" style="font-size: 1.33rem; font-weight: 800; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Misi 3</div>
+            <div class="misi-title" style="font-size: 1.33rem; font-weight: 600; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Regulasi Informasi Digital</div>
             <div class="misi-status-box" style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 0.4rem;">
                 <div class="misi-percentage" id="misi3-percentage" style="color: #cbd5e1; font-size: 0.65rem;">0% Belum Dimulai</div>
                 <div class="misi-bar-bg" style="background: rgba(255,255,255,0.2);"><div class="misi-bar-fill" id="misi3-bar-fill" style="width:0%;"></div></div>
@@ -955,11 +1707,11 @@ body.m3-overlay-open{overflow:hidden;}
         <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 20%, rgba(15, 23, 42, 0.4) 100%); z-index: 2;"></div>
 
         <div style="position: relative; z-index: 3; display: flex; justify-content: space-between; align-items: flex-start;">
-            <div class="misi-number m4" style="box-shadow: 0 2px 6px rgba(0,0,0,0.3);">4</div>
+            <div class="misi-number m4" style="box-shadow: 0 2px 6px rgba(0,0,0,0.3);">Misi 4</div>
         </div>
 
         <div style="position: relative; z-index: 3;">
-            <div class="misi-title" style="font-size: 1.33rem; font-weight: 800; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Misi 4</div>
+            <div class="misi-title" style="font-size: 1.33rem; font-weight: 800; color: #ffffff; margin-bottom: 0.4rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">Green Broadcasting</div>
             <div class="misi-status-box" style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 0.4rem;">
                 <div class="misi-percentage" id="misi4-percentage" style="color: #cbd5e1; font-size: 0.65rem;">0% Belum Dimulai</div>
                 <div class="misi-bar-bg" style="background: rgba(255,255,255,0.2);"><div class="misi-bar-fill" id="misi4-bar-fill" style="width:0%;"></div></div>
@@ -973,28 +1725,250 @@ body.m3-overlay-open{overflow:hidden;}
     <!-- 7). SEKSI BAWAH: 4 KOLOM DENGAN UKURAN SIMETRIS/SAMA PERSIS DENGAN KOLOM MISI -->
     <div class="bottom-layout-4col" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem;">
 
-        <!-- FINAL MISSION -->
-<div class="card-misi" style="border-left: 4px solid #1E3A5F; padding: 0.75rem; cursor: pointer;" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-final');">
-    <div style="font-weight: 700; font-size: 1.33rem; color: #ffffff;">🏆 Final Mission</div>
-    <div style="font-size: 1rem; color: #ffffff; margin: 0.2rem 0;">Virtual Creative Media Project</div>
-    <button class="btn-aksi-misi" style="background: #eab308; color: dark-blue; margin-top: auto;" onclick="event.stopPropagation(); mainkanSuaraKlik(); bukaSubHalaman('sub-final');">Mulai Proyek 🚀</button>
-</div>  
+            <!-- FINAL MISSION -->
+<div class="card-misi"
+     style="
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.85rem;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.75rem;
+        background: #0f172a;
+        border-left: 4px solid #1E3A5F;
+        cursor: pointer;
+     "
+     onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-final');">
 
-        
-        <!-- EVALUASI AKHIR (Tulisan "Final Ujian" dihapus, Ikon 🎯 di samping judul) -->
-<div class="card-misi" style="border-left: 4px solid #0f172a; padding: 0.75rem; cursor: pointer;" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-evaluasi');">
-    <div style="font-weight: 800; font-size: 1.33rem; color: #ffffff;">🎯 Evaluasi Akhir</div>
-    <div style="font-size: 1rem; color: #ffffff; margin: 0.2rem 0;">Ukur penguasaan materi dari seluruh misi</div>
-    <button class="btn-aksi-misi" style="background: #eab308; color: white; margin-top: auto;" onclick="event.stopPropagation(); mainkanSuaraKlik(); bukaSubHalaman('sub-evaluasi');">Mulai Evaluasi 📝</button>
-</div
-       
-        <!-- REFLEKSI & SERTIFIKAT -->
-<div class="card-misi" style="border-left: 4px solid #22c55e; padding: 0.75rem; cursor: pointer;" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-refleksi');">
-    <div style="font-weight: 800; font-size: 1.33rem; color: #ffffff;">🎓 Refleksi & Sertifikat</div>
-    <div style="font-size: 1rem; color: #ffffff; margin: 0.2rem 0;">Unduh sertifikat resmi kelulusan.</div>
-    <button class="btn-aksi-misi" style="background: #eab308; color: white; margin-top: auto;" onclick="event.stopPropagation(); mainkanSuaraKlik(); bukaSubHalaman('sub-refleksi');">Buka Refleksi 🎓</button>
-</div>
+    <!-- 1. GAMBAR BACKGROUND -->
+    <img src="images/final_mision.jpg"
+         alt="Final Mission"
+         style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            z-index: 1;
+            opacity: 0.5;
+         ">
+
+    <!-- 2. DARK OVERLAY -->
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to top,
+            rgba(15, 23, 42, 0.95) 20%,
+            rgba(15, 23, 42, 0.4) 100%
+        );
+        z-index: 2;
+    "></div>
+
+    <!-- 3. KONTEN DI ATAS GAMBAR -->
+    <div style="
+        position: relative;
+        z-index: 3;
+        font-weight: 800;
+        font-size: 17pt;
+        color: #ffffff;
+        line-height: 1.15;
+    ">
+        🏆 Final Mission
+    </div>
+
+    <div style="
+        position: relative;
+        z-index: 3;
+        font-size: 16pt;
+        color: #ffffff;
+        margin: 0.2rem 0;
+        line-height: 1.25;
+    ">
+        Virtual Creative Media Project
+    </div>
+
+    <!-- 4. TOMBOL -->
+    <button class="btn-aksi-misi"
+            style="
+                position: relative;
+                z-index: 3;
+                background: #eab308;
+                color: #ffffff;
+                margin-top: auto;
+            "
+            onclick="event.stopPropagation(); mainkanSuaraKlik(); bukaSubHalaman('sub-final');">
+        Mulai Proyek 🚀
+    </button>
+
+</div>   
       
+ <!-- EVALUASI AKHIR -->
+<div class="card-misi"
+     style="
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.85rem;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.75rem;
+        background: #0f172a;
+        border-left: 4px solid #0f172a;
+        cursor: pointer;
+     "
+     onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-evaluasi');">
+
+    <!-- 1. GAMBAR BACKGROUND -->
+    <img src="images/evaluasi.jpg"
+         alt="Evaluasi Akhir"
+         style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+            opacity: 0.5;
+         ">
+
+    <!-- 2. DARK OVERLAY -->
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to top,
+            rgba(15, 23, 42, 0.95) 20%,
+            rgba(15, 23, 42, 0.4) 100%
+        );
+        z-index: 2;
+    "></div>
+
+    <!-- 3. JUDUL -->
+    <div style="
+        position: relative;
+        z-index: 3;
+        font-weight: 800;
+        font-size: 17pt;
+        color: #ffffff;
+        line-height: 1.15;
+    ">
+        🎯 Evaluasi Akhir
+    </div>
+
+    <!-- 4. DESKRIPSI -->
+    <div style="
+        position: relative;
+        z-index: 3;
+        font-size: 16pt;
+        color: #ffffff;
+        margin: 0.2rem 0;
+        line-height: 1.25;
+    ">
+        Ukur penguasaan materi dari seluruh misi
+    </div>
+
+    <!-- 5. TOMBOL -->
+    <button class="btn-aksi-misi"
+            style="
+                position: relative;
+                z-index: 3;
+                background: #eab308;
+                color: #ffffff;
+                margin-top: auto;
+            "
+            onclick="event.stopPropagation(); mainkanSuaraKlik(); bukaSubHalaman('sub-evaluasi');">
+        Mulai Evaluasi 📝
+    </button>
+
+</div>      
+       
+      <!-- REFLEKSI & SERTIFIKAT -->
+<div class="card-misi"
+     style="
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.85rem;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.75rem;
+        background: #0f172a;
+        border-left: 4px solid #22c55e;
+        cursor: pointer;
+     "
+     onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-refleksi');">
+
+    <!-- 1. GAMBAR BACKGROUND -->
+    <img src="images/refleksi.png"
+         alt="Refleksi dan Sertifikat"
+         style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+            opacity: 0.5;
+         ">
+
+    <!-- 2. DARK OVERLAY -->
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to top,
+            rgba(15, 23, 42, 0.95) 20%,
+            rgba(15, 23, 42, 0.4) 100%
+        );
+        z-index: 2;
+    "></div>
+
+    <!-- 3. JUDUL -->
+    <div style="
+        position: relative;
+        z-index: 3;
+        font-weight: 800;
+        font-size: 17pt;
+        color: #ffffff;
+        line-height: 1.15;
+    ">
+        🎓 Refleksi & Sertifikat
+    </div>
+
+    <!-- 4. DESKRIPSI -->
+    <div style="
+        position: relative;
+        z-index: 3;
+        font-size: 16pt;
+        color: #ffffff;
+        margin: 0.2rem 0;
+        line-height: 1.25;
+    ">
+        Unduh sertifikat resmi kelulusan.
+    </div>
+
+    <!-- 5. TOMBOL -->
+    <button class="btn-aksi-misi"
+            style="
+                position: relative;
+                z-index: 3;
+                background: #eab308;
+                color: #ffffff;
+                margin-top: auto;
+            "
+            onclick="event.stopPropagation(); mainkanSuaraKlik(); bukaSubHalaman('sub-refleksi');">
+        Buka Refleksi 🎓
+    </button>
+
+</div>
         <!-- BADGE PENCAPAIAN (Tanpa Tombol Klaim Sertifikat) -->
         <div class="card-misi" style="padding: 0.75rem; justify-content: space-between;">
             <div class="card-sec-title" style="font-size: 0.75rem; margin: 0;">🏅 Badge Pencapaian</div>
@@ -1010,42 +1984,57 @@ body.m3-overlay-open{overflow:hidden;}
     </div>
 
 </div>
-<!-- SUB-VIEW: MISI 1 (TEKNOLOGI BROADCASTING & PERFILMAN) -->
-<div id="sub-misi1" class="sub-view hidden" style="display: flex; flex-direction: column; justify-content: space-between; max-height: 100vh; width: 100%; gap: 0.5rem; color: #ffffff; padding: 0.5rem 0.75rem; box-sizing: border-box; overflow-y: auto; background: transparent;">
 
+<!-- SUB-VIEW: MISI 1 (TEKNOLOGI BROADCASTING & PERFILMAN) -->
+
+<div id="sub-misi1"
+     class="sub-view hidden misi1-page"
+     style="display: flex; flex-direction: column; justify-content: space-between; max-height: 100vh; width: 100%; gap: 0.5rem; color: #ffffff; padding: 0.5rem 0.75rem; box-sizing: border-box; overflow-y: auto !important; background: transparent;">
    <!-- 1). HEADER: JUDUL UTAMA + AGENT NISA & BALON SAPAAN + TOMBOL BERANDA (POJOK KANAN ATAS) -->
     <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 0.65rem; padding: 0.5rem 0.85rem; display: flex; align-items: center; justify-content: space-between; gap: 0.85rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3); flex-shrink: 0;">
         <div style="display: flex; align-items: center; gap: 0.85rem; flex: 1;">
-            <img src="images/agent_nisa.png" alt="Agent Nisa" style="height: 3.8rem; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); flex-shrink: 0;">
-            
+           
+            <img class="m1-agent"
+     src="images/agent_nisa.png"
+     alt="Agent Nisa"
+     style="height: 3.8rem; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); flex-shrink: 0;">
             <div style="display: flex; flex-direction: column; gap: 0.3rem; flex: 1;">
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="background: #2563eb; font-size: 0.75rem; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 800; color: #ffffff;">MISI 1</span>
-                    <h2 style="font-size: 1.75rem; font-weight: 800; color: #ffffff; margin: 0;">Perkembangan Teknologi Broadcasting dan Perfilman</h2>
+                    <span style="background: #2563eb; font-size: 24pt; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 600; color: #ffffff;">MISI 1</span>
+                    <h2 style="font-size: 24pt; font-weight: 600; color: #ffffff; margin: 0;">Perkembangan Teknologi Broadcasting dan Perfilman</h2>
                 </div>
                 
                 <!-- Balon Sapaan Agent Nisa -->
-                <div style="background: rgba(30, 58, 138, 0.85); border: 1.5px solid #3b82f6; border-radius: 0.55rem; padding: 0.35rem 0.65rem; font-size: 1rem; color: #ffffff; line-height: 1.35;">
-                    <strong>👋 </strong> "Hai, Kawan SMK! Sudah siapkah kalian untuk mengikuti transformasi teknologi broadcasting dan perfilman kita? Mari mulai dari video menraik berikut ini." 🚀
+                <div style="background: rgba(30, 58, 138, 0.85); border: 1.5px solid #3b82f6; border-radius: 0.55rem; padding: 0.35rem 0.65rem; font-size: 1.33rem; color: #ffffff; line-height: 1.35;">
+                    <strong>👋</strong> "Hai, Kawan SMK! Sudah siapkah kalian untuk mengikuti transformasi teknologi broadcasting dan perfilman kita? Mari mulai dari video menraik berikut ini." 🚀
                 </div>
             </div>
         </div>
 
         <!-- Tombol Beranda (Pojok Kanan Atas Header) -->
-        <button onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #ffffff; padding: 0.35rem 0.75rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 0.35rem; transition: background 0.2s; flex-shrink: 0;" onmouseover="this.style.background='rgba(37, 99, 235, 0.6)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'" title="Kembali ke Beranda">
-            🏠 <span>Dashboard</span>
-        </button>
+       <button class="btn-dashboard-global"
+        onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');"
+        title="Kembali ke Dashboard">
+
+    🏠 <span>Dashboard</span>
+
+</button>
     </div>
 
    <!-- 2). TATA LETAK UTAMA: 2 KOLOM RAPI -->
-    <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 0.75rem; flex: 1; min-height: 0; align-items: stretch;">
-         
+ 
+     <div class="m1-main"
+     style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 0.75rem; flex: 1; min-height: 0; align-items: stretch;overflow-y: auto !important;">    
 <!-- KOLOM KIRI (RINGKASAN MATERI GAMBAR & TIMELINE SEJAJAR) -->
         <div style="display: flex; flex-direction: column; gap: 0.4rem; justify-content: space-between;">
        <!-- RINGKASAN MATERI (GAMBAR BISA DIZOOM/DIKLIK) -->
         <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="font-size: 0.8rem; font-weight: 800; color: #ffffff; margin-bottom: 0.4rem; align-self: flex-start; display: flex; align-items: center; gap: 0.3rem;">
-                🌍 <span>📖 Ringkasan Materi Perkembangan Teknologi. Klik gambar untuk melihat materi lengkap. </span>
+            <div style="font-size: 1.33rem; font-weight: 600; color: #ffffff; margin-bottom: 0.4rem; align-self: flex-start; display: flex; align-items: center; gap: 0.3rem;">
+              
+<span class="m1-summary-title">
+    📖 Ringkasan Materi Perkembangan Teknologi
+    <small>Klik gambar untuk melihat materi lengkap.</small>
+</span>
             </div>
             <div style="width: 100%;max-height:160px; border-radius: 0.5rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.2); background: #000;">
                 <img src="images/perkembangan_teknologi.png" alt="Ringkasan Perkembangan Teknologi" onclick="mainkanSuaraKlik(); perbesarGambar(this.src);" style="width: 100%; height: auto; object-fit: contain; display: block; cursor: pointer;" title="Klik untuk memperbesar gambar">
@@ -1055,11 +2044,11 @@ body.m3-overlay-open{overflow:hidden;}
             <!-- KOTAK TIMELINE -->
             <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255,255,255,0.2); border-radius: 0.55rem; padding: 0.4rem 0.65rem; display: flex; flex-direction: column; justify-content: space-between; flex: 1;">
                 <div>
-                    <div style="font-size: 13pt; font-weight: 300; color: #ffffff; margin-bottom: 0.2rem;">⏳ Timeline Urutan Era Teknologi</div>
+                    <div style="font-size: 16pt; font-weight: 600; color: #ffffff; margin-bottom: 0.2rem;">⏳ Timeline Urutan Era Teknologi</div>
                     <div class="timeline-container" id="timeline-misi1" style="margin: 0; padding: 0; background: none; border: none; display: flex; flex-direction: column; gap: 0.2rem;">
-                        <div class="drag-item" data-urutan="2" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: #64748b; padding: 0.2rem 0.4rem; font-size: 11pt;"> Era Digital (Radio Online / Streaming / TV Digital)</div>
-                        <div class="drag-item" data-urutan="3" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: #64748b; padding: 0.2rem 0.4rem; font-size: 11pt;"> Era Internet & AI (Smart TV / VOD / Integrasi AI)</div>
-                        <div class="drag-item" data-urutan="1" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: #64748b; padding: 0.2rem 0.4rem; font-size: 11pt;"> Era Analog (Radio Konvensional / Antena / TV Tabung)</div>
+                        <div class="drag-item" data-urutan="2" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: #64748b; padding: 0.2rem 0.4rem; font-size: 16pt;font-weight:500;"> Era Digital (Radio Online / Streaming / TV Digital)</div>
+                        <div class="drag-item" data-urutan="3" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: #64748b; padding: 0.2rem 0.4rem; font-size: 16pt;font-weight:500;"> Era Internet & AI (Smart TV / VOD / Integrasi AI)</div>
+                        <div class="drag-item" data-urutan="1" style="background: rgba(255,255,255,0.1); color: #ffffff; border-color: #64748b; padding: 0.2rem 0.4rem; font-size: 16pt;font-weight:500;"> Era Analog (Radio Konvensional / Antena / TV Tabung)</div>
                     </div>
                 </div>
                 <div style="margin-top: 0.25rem;">
@@ -1073,18 +2062,26 @@ body.m3-overlay-open{overflow:hidden;}
         <!-- KOLOM KANAN (STACK: VIDEO PEMBELAJARAN -> KUIS & BADGE TEPAT DI BAWAHNYA) -->
         <div style="display: flex; flex-direction: column; gap: 0.4rem; justify-content: space-between;">
 
-            <!-- PEMUTAR VIDEO PEMBELAJARAN (POSISI DI ATAS KUIS & BADGE) -->
-            <div style="background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0.65rem; padding: 0.4rem 0.65rem; text-align: center; flex-shrink: 0;">
-                <div class="misi-section-title" style="font-size: 11pt; font-weight: 400; color: #ffffff; margin: 0 0 0.25rem 0; text-align: left;">
-                    ✨ Tonton video berikut. Catat informasi penting yang kalian peroleh
-                </div>
-                <div class="video-container" style="text-align: center; margin: 0;">
-                    <video controls style="width: 100%;  border-radius: 8px;">
-                        <source src="video/misi1.mp4" type="video/mp4">
-                        Browser Anda tidak mendukung pemutaran video.
-                    </video>
-                </div>
-            </div>
+           <!-- PEMUTAR VIDEO PEMBELAJARAN (POSISI DI ATAS KUIS & BADGE) -->
+<div style="background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0.65rem; padding: 0.4rem 0.65rem; text-align: center; flex-shrink: 0;">
+
+    <div class="misi-section-title" style="font-size: 16pt; font-weight: 500; color: #ffffff; margin: 0 0 0.25rem 0; text-align: left;">
+        ✨ Tonton video berikut. Catat informasi penting yang kalian peroleh
+    </div>
+
+    <div class="video-container" style="text-align: center; margin: 0;">
+        <iframe
+            src="https://www.youtube.com/embed/vLJiuLDKbEg?si=OiOrtFTD1PTS4JQ6"
+            title="Video Pembelajaran Misi 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            style="width: 100%; height: 220px; border-radius: 8px; display: block;">
+        </iframe>
+    </div>
+
+</div>
 
             <!-- KOTAK KUIS FORMATIF & BADGE HADIAH (SEJAJAR DI BAWAH VIDEO) -->
             <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 0.5rem; flex: 1;">
@@ -1092,15 +2089,15 @@ body.m3-overlay-open{overflow:hidden;}
                 <!-- KOTAK KUIS -->
                 <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255,255,255,0.2); border-radius: 0.55rem; padding: 0.5rem; display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
-                        <div style="font-size: 13pt; font-weight: 800; color: #ffffff;">📝 KUIS FORMATIF MISI 1</div>
-                        <p style="font-size: 11pt; color: #ffffff; margin-top: 0.25rem; line-height: 1.3;">Uji pemahamanmu mengenai transformasi lini masa media broadcasting.</p>
+                        <div style="font-size: 16pt; font-weight: 600; color: #ffffff;">📝 KUIS FORMATIF MISI 1</div>
+                        <p style="font-size: 16pt; font-weight:500;color: #ffffff; margin-top: 0.25rem; line-height: 1.3;">Uji pemahamanmu mengenai transformasi lini masa media broadcasting.</p>
                     </div>
                     <button class="btn-lanjut" style="background-color: #2563eb; color: #ffffff; width: 100%; border: none; border-radius: 0.35rem; padding: 0.35rem; font-size: 11pt; font-weight: 500; cursor: pointer;" onclick="mainkanSuaraKlik(); tampilkanPopup('popup-kuis-misi1')">Mulai Latihan ✍️</button>
                 </div>
 
                 <!-- KOTAK BADGE HADIAH -->
                 <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255,255,255,0.2); border-radius: 0.55rem; padding: 0.4rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-                    <div style="font-size: 11pt; font-weight: 300; color: #ffffff;">🏅 BADGE HADIAH</div>
+                    <div style="font-size: 14pt; font-weight: 300; color: #ffffff;">🏅 BADGE HADIAH</div>
                     <div class="badge-icon-circle unlocked" style="width: 2.5rem; height: 2.5rem; font-size: 1.3rem; margin-top: 0.2rem; background: #334155; display: flex; align-items: center; justify-content: center; border-radius: 50%;">🎥</div>
                     <div style="font-weight: 500; font-size: 11pt; margin-top: 0.2rem; color: #ffffff;">Teknologi Explorer</div>
                 </div>
@@ -1112,14 +2109,29 @@ body.m3-overlay-open{overflow:hidden;}
     </div>
 
     <!-- 3). NAVIGASI BAWAH: TOMBOL KEMBALI & LANJUT -->
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.25rem; border-top: 1px solid rgba(255,255,255,0.2); flex-shrink: 0;">
-        <button class="btn-info" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');" style="background: #334155; color: #ffffff; border: none; padding: 0.35rem 1.1rem; border-radius: 0.4rem; font-size: 11pt; font-weight: 400; cursor: pointer;">
-            ⬅️ Kembali
-        </button>
+    <div class="m1-footer"
+     style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.25rem; border-top: 1px solid rgba(255,255,255,0.2); flex-shrink: 0;">
+       
+<button class="btn-info m1-back-btn"
+        onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');">
 
-        <button class="btn-utama" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi2');" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #ffffff; border: none; padding: 0.4rem 1.4rem; border-radius: 9999px; font-weight: 500; font-size: 11pt; cursor: pointer; box-shadow: 0 4px 8px rgba(37, 99, 235, 0.4);">
-            Lanjut ke Misi 2 ➡️
-        </button>
+    <img
+        src="images/kembali.png"
+        alt="Kembali"
+        class="m1-nav-image"
+    >
+</button>
+<button class="btn-utama m1-next-btn"
+        onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi2');">
+
+    <img
+        src="images/lanjut.png"
+        alt="Lanjut ke Misi 2"
+        class="m1-nav-image"
+    >
+
+</button>
+     
     </div>
 
 </div>
@@ -1132,132 +2144,522 @@ body.m3-overlay-open{overflow:hidden;}
         <span style="color: #ffffff; font-size: 11pt;">Gambar Ringkasan Materi Perkembangan Teknologi</span>
     </div>
 </div>
-<!-- SUB-VIEW: MISI 2 (MEDIA DIGITAL & JENIS MEDIA DIGITAL) -->
-<div id="sub-misi2" class="sub-view hidden" style="display: flex; flex-direction: column; gap: 0.75rem; color: #ffffff; padding: 0.5rem 0.75rem; box-sizing: border-box; overflow-y: auto; background: transparent;">
 
-    <!-- 1). HEADER: JUDUL UTAMA + AGENT NISA & BALON SAPAAN -->
-    <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 0.65rem; padding: 0.5rem 0.85rem; display: flex; align-items: center; gap: 0.85rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3); flex-shrink: 0;">
-        <img src="images/agent_nisa.png" alt="Agent Nisa" style="height: 3.8rem; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); flex-shrink: 0;">
-        
-        <div style="display: flex; flex-direction: column; gap: 0.3rem; flex: 1;">
-            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                <span style="background: #2563eb; font-size: 1.33rem; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 600; color: #ffffff;">MISI 2</span>
-                <h2 style="font-size: 1.33rem; font-weight: 600; color: #ffffff; margin: 0;">Media Digital & Jenis Media Digital</h2>
-            </div>
-            
-            <!-- Balon Sapaan Agent Nisa -->
-            <div style="background: rgba(30, 58, 138, 0.85); border: 1.5px solid #3b82f6; border-radius: 0.55rem; padding: 0.35rem 0.65rem; font-size: 1rem; color: #ffffff; line-height: 1.35;">
-                <strong>👋:</strong> "Hai, Kawan SMK! Media digital hadir dalam berbagai bentuk. Yuk, cermati peta & infografis di bawah, lalu selesaikan tantangannya!" 🚀
+<!-- SUB-VIEW: MISI 2 (MEDIA DIGITAL & JENIS MEDIA DIGITAL) -->
+<div id="sub-misi2"
+     class="sub-view hidden"
+     style="display:flex; flex-direction:column; gap:0.75rem; color:#ffffff; padding:0.5rem 0.75rem; box-sizing:border-box; overflow-y:auto; background:transparent;">
+
+    <!-- =====================================================
+         1. HEADER MISI 2
+         ===================================================== -->
+    <div style="
+        background:rgba(15,23,42,0.85);
+        backdrop-filter:blur(12px);
+        border:1px solid rgba(59,130,246,0.4);
+        border-radius:0.65rem;
+        padding:0.5rem 0.85rem;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:0.85rem;
+        box-shadow:0 4px 12px rgba(0,0,0,0.3);
+        flex-shrink:0;
+    ">
+
+        <!-- KIRI: AGENT + JUDUL -->
+        <div style="
+            display:flex;
+            align-items:center;
+            gap:0.85rem;
+            flex:1;
+            min-width:0;
+        ">
+
+            <img
+                src="images/agent_nisa.png"
+                alt="Agent Nisa"
+                class="misi2-agent"
+            >
+
+            <div style="
+                display:flex;
+                flex-direction:column;
+                gap:0.3rem;
+                flex:1;
+                min-width:0;
+            ">
+
+                <!-- JUDUL -->
+                <div style="
+                    display:flex;
+                    align-items:center;
+                    gap:0.5rem;
+                    flex-wrap:wrap;
+                ">
+
+                    <span style="
+                        background:#2563eb;
+                        font-size:24pt;
+                        padding:0.15rem 0.6rem;
+                        border-radius:9999px;
+                        font-weight:600;
+                        color:#ffffff;
+                    ">
+                        MISI 2
+                    </span>
+
+                    <h2 style="
+                        font-size:24pt;
+                        font-weight:600;
+                        color:#ffffff;
+                        margin:0;
+                    ">
+                        Jenis Media Digital
+                    </h2>
+
+                </div>
+
+                <!-- BALON SAPAAN -->
+                <div style="
+                    background:rgba(30,58,138,0.85);
+                    border:1.5px solid #3b82f6;
+                    border-radius:0.55rem;
+                    padding:0.35rem 0.65rem;
+                    font-size:16pt;
+                    color:#ffffff;
+                    line-height:1.35;
+                ">
+                    <strong>👋:</strong>
+                    "Hai, Kawan SMK! Media digital hadir dalam berbagai bentuk.
+                    Yuk, cermati video & infografis di bawah, lalu selesaikan
+                    tantangannya!" 🚀
+                </div>
+
             </div>
         </div>
+
+        <!-- DASHBOARD POJOK KANAN ATAS -->
+        <button
+            type="button"
+            class="misi2-dashboard"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');"
+            title="Kembali ke Dashboard"
+        >
+            🏠 <span>Dashboard</span>
+        </button>
+
     </div>
 
-    <!-- 2). BARIS 2 KOLOM: PETA DUNIA DIGITAL (KIRI) vs INFOGRAFIS JENIS MEDIA (KANAN) -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; flex-shrink: 0;">
-        
-        <!-- KOLOM KIRI: PETA DUNIA MEDIA DIGITAL -->
-        <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="font-size: 1.33rem; font-weight: 500; color: #ffffff; margin-bottom: 0.4rem; align-self: flex-start; display: flex; align-items: center; gap: 0.3rem;">
-                🌍 <span>Peta Dunia Media Digital</span>
+
+    <!-- =====================================================
+         2. BARIS MEDIA PEMBELAJARAN
+         VIDEO KIRI + INFOGRAFIS KANAN
+         ===================================================== -->
+    <div style="
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:0.75rem;
+        flex-shrink:0;
+    ">
+
+        <!-- =================================================
+             KIRI: VIDEO REVOLUSI INTERAKTIF
+             ================================================= -->
+        <div style="
+            background:rgba(15,23,42,0.85);
+            backdrop-filter:blur(12px);
+            border:1px solid rgba(255,255,255,0.15);
+            border-radius:0.65rem;
+            padding:0.65rem;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            text-align:center;
+        ">
+
+            <div style="
+                font-size:16pt;
+                font-weight:700;
+                color:#ffffff;
+                margin-bottom:0.4rem;
+                align-self:flex-start;
+                display:flex;
+                align-items:center;
+                gap:0.3rem;
+            ">
+                🌍 <span>Media Digital di Dunia</span>
             </div>
-            <div style="width: 100%;max-height:160px; border-radius: 0.5rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.2); background: #000;">
-                <img src="images/peta_media_digital.png" alt="Peta Dunia Media Digital" onclick="mainkanSuaraKlik(); perbesarGambar(this.src);" style="width: 100%; height: auto; object-fit: contain; display: block; cursor: pointer;" title="Klik untuk memperbesar gambar">
+
+            <div style="
+                font-size:12pt;
+                color:#ffffff;
+                margin-bottom:0.4rem;
+                align-self:flex-start;
+                text-align:left;
+            ">
+                ✨ Tonton video berikut dan catat informasi penting
+                yang kalian peroleh.
             </div>
+
+            <div class="misi2-video-wrapper">
+
+                <video
+                    class="misi2-video"
+                    controls
+                    preload="metadata"
+                >
+                    <source
+                        src="video/Revolusi_Interaktif.mp4"
+                        type="video/mp4"
+                    >
+                    Browser Anda tidak mendukung pemutaran video.
+                </video>
+
+            </div>
+
         </div>
 
-        <!-- KOLOM KANAN: INFOGRAFIS JENIS MEDIA DIGITAL -->
-        <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="font-size: 1.33rem; font-weight: 500; color: #ffffff; margin-bottom: 0.4rem; align-self: flex-start; display: flex; align-items: center; gap: 0.3rem;">
+
+        <!-- =================================================
+             KANAN: RINGKASAN JENIS MEDIA DIGITAL
+             ================================================= -->
+        <div style="
+            background:rgba(15,23,42,0.85);
+            backdrop-filter:blur(12px);
+            border:1px solid rgba(255,255,255,0.15);
+            border-radius:0.65rem;
+            padding:0.65rem;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            text-align:center;
+        ">
+
+            <div style="
+                font-size:16pt;
+                font-weight:700;
+                color:#ffffff;
+                margin-bottom:0.4rem;
+                align-self:flex-start;
+                display:flex;
+                align-items:center;
+                gap:0.3rem;
+            ">
                 📊 <span>Ringkasan Jenis Media Digital</span>
             </div>
-            <div style="width: 100%; max-height:160px; border-radius: 0.5rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.2); background: #000;">
-                <img src="images/jenis_media_sosial.png" alt="Ringkasan Jenis Media Digital" onclick="mainkanSuaraKlik(); perbesarGambar(this.src);" style="width: 100%; height: auto; object-fit: contain; display: block; cursor: pointer;" title="Klik untuk memperbesar gambar">
+
+            <div style="
+                font-size:12pt;
+                color:#ffffff;
+                margin-bottom:0.4rem;
+                align-self:flex-start;
+                text-align:left;
+            ">
+                🔍 Klik gambar untuk melihat materi secara penuh.
             </div>
+
+            <div style="
+                width:100%;
+                border-radius:0.5rem;
+                overflow:hidden;
+                border:1px solid rgba(255,255,255,0.2);
+                background:#000000;
+            ">
+
+                <img
+                    src="images/jenis_media_sosial.png"
+                    alt="Ringkasan Jenis Media Digital"
+                    class="misi2-summary-image"
+                    onclick="mainkanSuaraKlik(); perbesarGambar(this.src);"
+                    title="Klik untuk memperbesar gambar"
+                >
+
+            </div>
+
         </div>
 
     </div>
 
-    <!-- 3). BARIS 2 KOLOM RAPI: MATCHING CHALLENGE (KIRI) vs KUIS & BADGE (KANAN) -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; flex-shrink: 0;">
-        
-        <!-- KOLOM KIRI: KARTU PEMICU MATCHING CHALLENGE -->
-        <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; justify-content: space-between;">
+
+    <!-- =====================================================
+         3. MATCHING + KUIS & BADGE
+         ===================================================== -->
+    <div style="
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:0.75rem;
+        flex-shrink:0;
+    ">
+
+        <!-- MATCHING CHALLENGE -->
+        <div style="
+            background:rgba(15,23,42,0.85);
+            backdrop-filter:blur(12px);
+            border:1px solid rgba(255,255,255,0.15);
+            border-radius:0.65rem;
+            padding:0.65rem;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        ">
+
             <div>
-                <div style="font-size: 1.33rem; font-weight: 500; color: #ffffff; display: flex; align-items: center; gap: 0.35rem;">
+
+                <div style="
+                    font-size:16pt;
+                    font-weight:700;
+                    color:#ffffff;
+                    display:flex;
+                    align-items:center;
+                    gap:0.35rem;
+                ">
                     🧩 <span>MATCHING CHALLENGE</span>
                 </div>
-                <p style="font-size: 1rem; color: #ffffff; margin-top: 0.25rem; line-height: 1.35;">
-                    Cocokkan platform media digital berikut dengan fungsinya untuk melatih ketajaman analisis.
-                </p>
-            </div> 
-            <button class="btn-lanjut" style="background-color: #f59e0b; color: #ffffff; width: 100%; border-radius: 0.35rem; padding: 0.4rem; font-size: 0.75rem; font-weight: 600; margin-top: 0.5rem; border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3);" onclick="mainkanSuaraKlik(); tampilkanPopup('popup-matching-misi2');">
-                Mulai Tantangan 🧩
-            </button>
-        </div>
 
-        <!-- KOLOM KANAN: KUIS FORMATIF & BADGE HADIAH (MENUMPUK ATAS-BAWAH) -->
-        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-            
-            <!-- Kuis Formatif -->
-            <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius: 0.65rem; padding: 0.55rem; display: flex; flex-direction: column; justify-content: space-between;">
-                <div>
-                    <div style="font-size: 1.33rem; font-weight: 600; color: #ffffff;">📝 KUIS FORMATIF MISI 2</div>
-                    <p style="font-size: 1rem; color: #ffffff; margin-top: 0.15rem; line-height: 1.3;">Uji pemahamanmu dalam pemilihan jenis media digital.</p>
-                </div>
-                <button class="btn-lanjut" style="background-color: #2563eb; color: #ffffff; width: 100%; border-radius: 0.35rem; padding: 0.35rem; font-size: 0.72rem; font-weight: 800; margin-top: 0.4rem; border: none; cursor: pointer;" onclick="mainkanSuaraKlik(); tampilkanPopup('popup-kuis-misi2');">Mulai Latihan Soal ✍️</button>
+                <p style="
+                    font-size:16pt;
+                    font-weight:500;
+                    color:#ffffff;
+                    margin-top:0.25rem;
+                    line-height:1.35;
+                ">
+                    Cocokkan platform media digital berikut dengan
+                    fungsinya untuk melatih ketajaman analisis.
+                </p>
+
             </div>
 
-            <!-- Badge Hadiah -->
-            <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius: 0.65rem; padding: 0.4rem 0.6rem; display: flex; align-items: center; justify-content: space-between;">
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <div class="badge-icon-circle unlocked" style="width: 2.2rem; height: 2.2rem; font-size: 1.1rem; background: #1e293b; border-color: #3b82f6;">🌐</div>
-                    <div style="text-align: left;">
-                        <div style="font-weight: 800; font-size: 0.75rem; color: #ffffff;">Digital Explorer</div>
-                        <div style="font-size: 0.65rem; color: #ffffff;">Badge Misi 2</div>
+            <button
+                class="btn-lanjut"
+                style="
+                    background-color:#f59e0b;
+                    color:#ffffff;
+                    width:100%;
+                    border-radius:0.35rem;
+                    padding:0.4rem;
+                    font-size:11pt;
+                    font-weight:600;
+                    margin-top:0.5rem;
+                    border:none;
+                    cursor:pointer;
+                    box-shadow:0 4px 10px rgba(245,158,11,0.3);
+                "
+                onclick="mainkanSuaraKlik(); tampilkanPopup('popup-matching-misi2');"
+            >
+                Mulai Tantangan 🧩
+            </button>
+
+        </div>
+
+
+        <!-- KUIS + BADGE -->
+        <div style="
+            display:flex;
+            flex-direction:column;
+            gap:0.5rem;
+        ">
+
+            <!-- KUIS FORMATIF -->
+            <div style="
+                background:rgba(15,23,42,0.85);
+                backdrop-filter:blur(12px);
+                border:1px solid rgba(255,255,255,0.15);
+                border-radius:0.65rem;
+                padding:0.55rem;
+                display:flex;
+                flex-direction:column;
+                justify-content:space-between;
+            ">
+
+                <div>
+
+                    <div style="
+                        font-size:16pt;
+                        font-weight:700;
+                        color:#ffffff;
+                    ">
+                        📝 KUIS FORMATIF MISI 2
                     </div>
+
+                    <p style="
+                        font-size:16pt;
+                        font-weight:500;
+                        color:#ffffff;
+                        margin-top:0.15rem;
+                        line-height:1.3;
+                    ">
+                        Uji pemahamanmu dalam pemilihan jenis media digital.
+                    </p>
+
                 </div>
-                <div style="font-size: 0.65rem; font-weight: 800; color: #ffffff; background: rgba(255,255,255,0.1); padding: 0.15rem 0.4rem; border-radius: 0.3rem;">🏅 BADGE</div>
+
+                <button
+                    class="btn-lanjut"
+                    style="
+                        background-color:#2563eb;
+                        color:#ffffff;
+                        width:100%;
+                        border-radius:0.35rem;
+                        padding:0.35rem;
+                        font-size:11pt;
+                        font-weight:800;
+                        margin-top:0.4rem;
+                        border:none;
+                        cursor:pointer;
+                    "
+                    onclick="mainkanSuaraKlik(); tampilkanPopup('popup-kuis-misi2');"
+                >
+                    Mulai Latihan Soal ✍️
+                </button>
+
+            </div>
+
+
+            <!-- BADGE -->
+            <div style="
+                background:rgba(15,23,42,0.85);
+                backdrop-filter:blur(12px);
+                border:1px solid rgba(255,255,255,0.15);
+                border-radius:0.65rem;
+                padding:0.4rem 0.6rem;
+                display:flex;
+                align-items:center;
+                justify-content:space-between;
+            ">
+
+                <div style="
+                    display:flex;
+                    align-items:center;
+                    gap:0.5rem;
+                ">
+
+                    <div
+                        class="badge-icon-circle unlocked"
+                        style="
+                            width:2.2rem;
+                            height:2.2rem;
+                            font-size:1.1rem;
+                            background:#1e293b;
+                            border-color:#3b82f6;
+                        "
+                    >
+                        🌐
+                    </div>
+
+                    <div style="text-align:left;">
+
+                        <div style="
+                            font-weight:800;
+                            font-size:0.75rem;
+                            color:#ffffff;
+                        ">
+                            Digital Explorer
+                        </div>
+
+                        <div style="
+                            font-size:0.65rem;
+                            color:#ffffff;
+                        ">
+                            Badge Misi 2
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div style="
+                    font-size:0.65rem;
+                    font-weight:800;
+                    color:#ffffff;
+                    background:rgba(255,255,255,0.1);
+                    padding:0.15rem 0.4rem;
+                    border-radius:0.3rem;
+                ">
+                    🏅 BADGE
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-    <!-- 4). NAVIGASI BAWAH: TOMBOL KEMBALI & LANJUT KE MISI 3 -->
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.4rem; border-top: 1px solid rgba(255,255,255,0.15); flex-shrink: 0; margin-top: 0.2rem;">
-        <button class="btn-info" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');" style="background: #334155; color: #ffffff; border: none; padding: 0.4rem 1.1rem; border-radius: 0.4rem; font-size: 0.75rem; font-weight: 700; cursor: pointer;">
-            ⬅️ Kembali
+
+    <!-- =====================================================
+         4. NAVIGASI BAWAH
+         ===================================================== -->
+    <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:0.25rem;
+        border-top:1px solid rgba(255,255,255,0.2);
+        flex-shrink:0;
+        margin-top:0.1rem;
+    ">
+
+        <!-- KEMBALI -->
+        <button
+            type="button"
+            class="misi2-nav-button"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi1');"
+            title="Kembali ke Dashboard"
+        >
+            <img
+                src="images/kembali.png"
+                alt="Kembali"
+                class="misi2-nav-image"
+            >
         </button>
-        
-        <button class="btn-utama" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi3');" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #ffffff; border: none; padding: 0.45rem 1.4rem; border-radius: 9999px; font-weight: 800; font-size: 0.75rem; cursor: pointer; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);">
-            Lanjut ke Misi 3 ➡️
+
+
+        <!-- LANJUT -->
+        <button
+            type="button"
+            class="misi2-nav-button"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi3');"
+            title="Lanjut ke Misi 3"
+        >
+            <img
+                src="images/lanjut.png"
+                alt="Lanjut ke Misi 3"
+                class="misi2-nav-image"
+            >
         </button>
+
     </div>
 
 </div>
+
 <!-- SUB-VIEW: MISI 3 (REGULASI MEDIA & ARTIFICIAL INTELLIGENCE) -->
 <div id="sub-misi3" class="sub-view hidden" style="display: flex; flex-direction: column; gap: 0.75rem; color: #ffffff; padding: 0.5rem 0.75rem; box-sizing: border-box; overflow-y: auto; background: transparent;">
 
     <!-- 1). HEADER: JUDUL UTAMA + AGENT NISA & BALON SAPAAN + TOMBOL BERANDA (POJOK KANAN ATAS) -->
     <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 0.65rem; padding: 0.5rem 0.85rem; display: flex; align-items: center; justify-content: space-between; gap: 0.85rem; box-shadow: 0 4px 12px rgba(0,0,0,0.3); flex-shrink: 0;">
         <div style="display: flex; align-items: center; gap: 0.85rem; flex: 1;">
-            <img src="images/agent_nisa.png" alt="Agent Nisa" style="height: 3.8rem; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); flex-shrink: 0;">
+            <img src="images/agent_nisa.png" alt="Agent Nisa" style="height: 7rem; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); flex-shrink: 0;">
             
             <div style="display: flex; flex-direction: column; gap: 0.3rem; flex: 1;">
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="background: #2563eb; font-size: 1.33rem; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 700; color: #ffffff;">MISI 3</span>
-                    <h2 style="font-size: 1.33rem; font-weight: 700; color: #ffffff; margin: 0;">Regulasi Media & Artificial Intelligence</h2>
+                    <span style="background: #2563eb; font-size: 24pt; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 600; color: #ffffff;">MISI 3</span>
+                    <h2 style="font-size: 24pt; font-weight: 700; color: #ffffff; margin: 0;">Regulasi Informasi digital</h2>
                 </div>
                 
                 <!-- Balon Sapaan Agent Nisa -->
-                <div style="background: rgba(30, 58, 138, 0.85); border: 1.5px solid #3b82f6; border-radius: 0.55rem; padding: 0.35rem 0.65rem; font-size: 1rem; color: #ffffff; line-height: 1.35;">
+                <div style="background: rgba(30, 58, 138, 0.85); border: 1.5px solid #3b82f6; border-radius: 0.55rem; padding: 0.35rem 0.65rem; font-size: 16pt; color: #ffffff; line-height: 1.35;">
                     <strong>👋</strong> "Hai, Kawan SMK! Pelajari regulasi media & etika AI melalui infografis, lalu uji analisismu pada studi kasus interaktif di samping!" 🚀
                 </div>
             </div>
         </div>
 
-        <!-- Tombol Beranda (Pojok Kanan Atas Header) -->
-        <button onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #ffffff; padding: 0.35rem 0.75rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 0.35rem; transition: background 0.2s; flex-shrink: 0;" onmouseover="this.style.background='rgba(37, 99, 235, 0.6)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'" title="Kembali ke Beranda">
+        <!-- DASHBOARD POJOK KANAN ATAS -->
+        <button
+            type="button"
+            class="misi2-dashboard"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');"
+            title="Kembali ke Dashboard"
+        >
             🏠 <span>Dashboard</span>
         </button>
     </div>
@@ -1269,7 +2671,7 @@ body.m3-overlay-open{overflow:hidden;}
         <div class="m3-image-card" aria-label="Infografis Misi 3">
             <div class="m3-image-card-head">
                 <div>
-                    <div class="m3-image-kicker">MATERI MISI 3</div>
+                    <div class="m3-image-kicker">Rigkasan Materi</div>
                     <div class="m3-image-title">⚖️ Regulasi Media, UU ITE & AI</div>
                 </div>
                 <span class="m3-image-hint">🔍 Klik gambar untuk memperbesar</span>
@@ -1282,27 +2684,27 @@ body.m3-overlay-open{overflow:hidden;}
 
         <!-- KOLOM KANAN: AI ETHICS DECISION SIMULATOR (STUDI KASUS INTERAKTIF SEJAJAR) -->
         <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; gap: 0.5rem;">
-            <div style="font-size: 1rem; font-weight: 500; color: #ffffff; display: flex; align-items: center; gap: 0.35rem;">
+            <div style="font-size: 16pt; font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 0.35rem;">
                 🤖 <span>AI Ethics Decision Simulator</span>
             </div>
             
             <!-- Box Skenario Kasus -->
             <div style="background: rgba(30, 41, 59, 0.8); border-left: 4px solid #3b82f6; border-radius: 0.4rem; padding: 0.5rem 0.65rem;">
-                <div style="font-size: 1.33rem; font-weight: 500; color: #60a5fa;">🎬 Skenario Studi Kasus:</div>
-                <p style="font-size: 1rem; color: #ffffff; font-style: italic; margin-top: 0.2rem; line-height: 1.35;">
+                <div style="font-size: 1.33rem; font-weight: 500; color: #ffffff;">🎬 Skenario Studi Kasus:</div>
+                <p style="font-size: 16pt; color: #ffffff; font-style: italic; margin-top: 0.2rem; line-height: 1.35;">
                     "Sebagai editor video TV, Anda dikejar tenggat waktu klip berita. Anda berpikir menggunakan suara kloning AI (Deepfake Voice) tokoh publik tanpa izin resmi agar pekerjaan instan selesai."
                 </p>
             </div>
 
-            <p style="font-size: 1rem; color: #ffffff; margin: 0;">Pilih tindakan paling tepat untuk merespons skenario di atas:</p>
+            <p style="font-size: 1.33rem; color: #ffffff; margin: 0;">Pilih tindakan paling tepat untuk merespons skenario di atas:</p>
 
             <!-- Tombol Pilihan Tindakan -->
             <div style="display: flex; flex-direction: column; gap: 0.4rem;">
-                <button onclick="mainkanSuaraKlik(); pilihTindakanSimulasi(false);" style="text-align: left; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #ffffff; border-radius: 0.4rem; padding: 0.45rem 0.6rem; font-size: 1rem; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='rgba(239, 68, 68, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'">
+                <button onclick="mainkanSuaraKlik(); pilihTindakanSimulasi(false);" style="text-align: left; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #ffffff; border-radius: 0.4rem; padding: 0.45rem 0.6rem; font-size: 16pt; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='rgba(239, 68, 68, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'">
                     🟢 <strong>Tindakan A:</strong> Menggunakan suara AI tersebut langsung demi mengejar efisiensi waktu tayang.
                 </button>
                 
-                <button onclick="mainkanSuaraKlik(); pilihTindakanSimulasi(true);" style="text-align: left; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #ffffff; border-radius: 0.4rem; padding: 0.45rem 0.6rem; font-size: 1rem; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='rgba(34, 197, 94, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'">
+                <button onclick="mainkanSuaraKlik(); pilihTindakanSimulasi(true);" style="text-align: left; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); color: #ffffff; border-radius: 0.4rem; padding: 0.45rem 0.6rem; font-size: 16pt; cursor: pointer; transition: background 0.2s;" onmouseover="this.style.background='rgba(34, 197, 94, 0.2)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'">
                     🟢 <strong>Tindakan B:</strong> Menolak cara instan tersebut, lalu mencari klip suara asli yang valid atau merekam suara narasi manual.
                 </button>
             </div>
@@ -1338,7 +2740,7 @@ body.m3-overlay-open{overflow:hidden;}
         <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
                 <div style="font-size: 1.33rem; font-weight: 500; color: #ffffff;">📝 KUIS FORMATIF MISI 3</div>
-                <p style="font-size: 1rem; color: #ffffff; margin-top: 0.25rem; line-height: 1.35;">
+                <p style="font-size: 1.33rem; color: #ffffff; margin-top: 0.25rem; line-height: 1.35;">
                     Evaluasi pemahaman Anda mengenai payung hukum media penyiaran dan kode etik penggunaan AI.
                 </p>
             </div>
@@ -1361,41 +2763,79 @@ body.m3-overlay-open{overflow:hidden;}
 
     </div>
 
-    <!-- 4). NAVIGASI BAWAH: TOMBOL KEMBALI (POJOK KIRI BAWAH) & TOMBOL LANJUT (POJOK KANAN BAWAH) -->
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.4rem; border-top: 1px solid rgba(255,255,255,0.15); flex-shrink: 0; margin-top: 0.2rem;">
-        <button class="btn-info" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');" style="background: #334155; color: #ffffff; border: none; padding: 0.4rem 1.1rem; border-radius: 0.4rem; font-size: 0.75rem; font-weight: 700; cursor: pointer;">
-            ⬅️ Kembali
+     <!-- =====================================================
+         4. NAVIGASI BAWAH
+         ===================================================== -->
+    <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:0.25rem;
+        border-top:1px solid rgba(255,255,255,0.2);
+        flex-shrink:0;
+        margin-top:0.1rem;
+    ">
+
+        <!-- KEMBALI -->
+        <button
+            type="button"
+            class="misi2-nav-button"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi2');"
+            title="Kembali ke Dashboard"
+        >
+            <img
+                src="images/kembali.png"
+                alt="Kembali"
+                class="misi2-nav-image"
+            >
         </button>
-        
-        <button class="btn-utama" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi4');" style="background: linear-gradient(135deg, #eab308, #ca8a04); color: #ffffff; border: none; padding: 0.45rem 1.4rem; border-radius: 9999px; font-weight: 800; font-size: 0.75rem; cursor: pointer; box-shadow: 0 4px 12px rgba(234, 179, 8, 0.4);">
-            Lanjut ke Misi 4 🏆 ➡️
+
+
+        <!-- LANJUT -->
+        <button
+            type="button"
+            class="misi2-nav-button"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi4');"
+            title="Lanjut ke Misi 3"
+        >
+            <img
+                src="images/lanjut.png"
+                alt="Lanjut ke Misi 3"
+                class="misi2-nav-image"
+            >
         </button>
     </div>
 
 </div>
+
 <!-- SUB-VIEW: MISI 4 (GREEN BROADCASTING & LINGKUNGAN) -->
 <div id="sub-misi4" class="sub-view hidden" style="display: flex; flex-direction: column; gap: 0.75rem; color: #ffffff; padding: 0.5rem 0.75rem; box-sizing: border-box; overflow-y: auto; background: transparent;">
 
     <!-- 1). HEADER: GAMBAR GREEN BROADCASTING LAYER DITINDIH TEKS JUDUL UTAMA + AGENT NISA & BALON SAPAAN + TOMBOL BERANDA (POJOK KANAN ATAS) -->
-     <div style="position: relative; overflow: hidden; border-radius: 0.75rem; border: 1px solid rgba(16, 185, 129, 0.4); padding: 0.85rem 1rem; background: #064e3b; min-height: 90px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.4); flex-shrink: 0;">
+     <div style="position: relative; overflow: hidden; border-radius: 0.75rem; border: 1px solid rgba(16, 185, 129, 0.4); padding: 0.85rem 1rem; background: #00008B; min-height: 90px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.4); flex-shrink: 0;">
         <div style="display: flex; align-items: center; gap: 0.85rem; flex: 1;">
-            <img src="images/agent_nisa.png" alt="Agent Nisa" style="height: 3.8rem; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); flex-shrink: 0;">
+            <img src="images/agent_nisa.png" alt="Agent Nisa" style="height: 7rem; width: auto; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); flex-shrink: 0;">
             
             <div style="display: flex; flex-direction: column; gap: 0.3rem; flex: 1;">
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="background: #2563eb; font-size: 1.55rem; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 700; color: #ffffff;">MISI 4</span>
-                    <h2 style="font-size: 1.75rem; font-weight: 700; color: #ffffff; margin: 0;">Green Broadcasting dan lingkungan</h2>
+                    <span style="background: #2563eb; font-size: 24pt; padding: 0.15rem 0.6rem; border-radius: 9999px; font-weight: 600; color: #ffffff;">MISI 4</span>
+                    <h2 style="font-size: 24pt; font-weight: 600; color: #ffffff; margin: 0;">Green Broadcasting dan lingkungan</h2>
                 </div>
                 
                 <!-- Balon Sapaan Agent Nisa -->
-                <div style="background: rgba(30, 58, 138, 0.85); border: 1.5px solid ##10b981; border-radius: 0.55rem; padding: 0.35rem 0.65rem; font-size: 1rem; color: #ffffff; line-height: 1.35;">
-                    <strong>👋 </strong> ""Halo, kreator muda! 👋 Ayo berkenalan dengan Green Broadcasting. Siap berkarya dengan bijaksana dan ramah lingkungan?" 🚀
+                <div style="background: rgba(30, 58, 138, 0.85); border: 1.5px solid ##10b981; border-radius: 0.55rem; padding: 0.35rem 0.65rem; font-size: 16pt; color: #ffffff; line-height: 1.35;">
+                    <strong>👋 </strong> ""Halo, kreator muda! Ayo berkenalan dengan Green Broadcasting. Siap berkarya dengan bijaksana dan ramah lingkungan?" 🚀
                 </div>
             </div>
         </div>
 
-        <!-- Tombol Beranda (Pojok Kanan Atas Header) -->
-        <button onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); color: #ffffff; padding: 0.35rem 0.75rem; border-radius: 0.5rem; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 0.35rem; transition: background 0.2s; flex-shrink: 0;" onmouseover="this.style.background='rgba(37, 99, 235, 0.6)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'" title="Kembali ke Beranda">
+        <!-- DASHBOARD POJOK KANAN ATAS -->
+        <button
+            type="button"
+            class="misi2-dashboard"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');"
+            title="Kembali ke Dashboard"
+        >
             🏠 <span>Dashboard</span>
         </button>
     </div>
@@ -1405,7 +2845,7 @@ body.m3-overlay-open{overflow:hidden;}
         
        <!-- KOLOM KIRI: INFOGRAFIS RINGKASAN MATERI (GAMBAR ringkasan_materi.png DAPAT DI-ZOOM) -->
         <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <div style="font-size: 0.8rem; font-weight: 800; color: #ffffff; margin-bottom: 0.35rem; align-self: flex-start; display: flex; align-items: center; gap: 0.3rem;">
+            <div style="font-size: 16pt; font-weight: 700; color: #ffffff; margin-bottom: 0.35rem; align-self: flex-start; display: flex; align-items: center; gap: 0.3rem;">
                 📖 <span>Ringkasan Materi Green Broadcasting</span>
             </div>
             <div style="width: 100%; border-radius: 0.5rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.2); background: #000;">
@@ -1414,15 +2854,15 @@ body.m3-overlay-open{overflow:hidden;}
         </div>
 <!-- KOLOM KANAN: GREEN CHALLENGE (KLASIFIKASI AKSI KERJA MEDIA) -->
         <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; gap: 0.45rem;">
-            <div style="font-size: 1rem; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 0.35rem;">
+            <div style="font-size: 16pt; font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 0.35rem;">
                 🧩 <span>Green Challenge (Klasifikasi Aksi Kerja)</span>
             </div>
-            <p style="font-size: 1rem; color: #ffffff; margin: 0 0 0.2rem 0;">Pilih kategori yang tepat untuk skenario tindakan produksi di bawah ini:</p>
+            <p style="font-size: 16pt; font-weight:300; color: #ffffff; margin: 0 0 0.2rem 0;">Pilih kategori yang tepat untuk skenario tindakan produksi di bawah ini:</p>
 
             <!-- Soal 1 -->
             <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 0.4rem 0.55rem; border-radius: 0.4rem; display: flex; flex-direction: column; gap: 0.25rem;">
-                <div style="font-size: 1rem; color: #ffffff; line-height: 1.3;">1. Menggunakan naskah digital paperless & cloud storage.</div>
-                <select id="gc-misi4-1" onchange="mainkanSuaraKlik(); periksaGreenChallengeMisi4();" style="background: #1e293b; color: #ffffff; border: 1px solid #10b981; border-radius: 0.35rem; padding: 0.25rem; font-size: 1rem; width: 100%;">
+                <div style="font-size: 16pt; font-weight: 300; color: #ffffff; line-height: 1.3;">1. Menggunakan naskah digital paperless & cloud storage.</div>
+                <select id="gc-misi4-1" onchange="mainkanSuaraKlik(); periksaGreenChallengeMisi4();" style="background: #1e293b; color: #ffffff; border: 1px solid #10b981; border-radius: 0.35rem; padding: 0.25rem; font-size: 16pt; width: 100%;">
                     <option value="">-- Pilih Kategori --</option>
                     <option value="benar">Ramah Lingkungan 🌱</option>
                     <option value="salah">Tidak Ramah Lingkungan ⚠️</option>
@@ -1431,8 +2871,8 @@ body.m3-overlay-open{overflow:hidden;}
 
             <!-- Soal 2 -->
             <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 0.4rem 0.55rem; border-radius: 0.4rem; display: flex; flex-direction: column; gap: 0.25rem;">
-                <div style="font-size: 1rem; color: #ffffff; line-height: 1.3;">2. Membiarkan lampu studio high-wattage menyala semalaman.</div>
-                <select id="gc-misi4-2" onchange="mainkanSuaraKlik(); periksaGreenChallengeMisi4();" style="background: #1e293b; color: #ffffff; border: 1px solid #10b981; border-radius: 0.35rem; padding: 0.25rem; font-size: 1rem; width: 100%;">
+                <div style="font-size: 16pt; color: #ffffff; line-height: 1.3;">2. Membiarkan lampu studio high-wattage menyala semalaman.</div>
+                <select id="gc-misi4-2" onchange="mainkanSuaraKlik(); periksaGreenChallengeMisi4();" style="background: #1e293b; color: #ffffff; border: 1px solid #10b981; border-radius: 0.35rem; padding: 0.25rem; font-size: 16pt; width: 100%;">
                     <option value="">-- Pilih Kategori --</option>
                     <option value="benar">Ramah Lingkungan 🌱</option>
                     <option value="salah">Tidak Ramah Lingkungan ⚠️</option>
@@ -1441,8 +2881,8 @@ body.m3-overlay-open{overflow:hidden;}
 
             <!-- Soal 3 -->
             <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); padding: 0.4rem 0.55rem; border-radius: 0.4rem; display: flex; flex-direction: column; gap: 0.25rem;">
-                <div style="font-size: 1rem; color: #ffffff; line-height: 1.3;">3. Memanfaatkan kembali (Reuse) properti panggung lama.</div>
-                <select id="gc-misi4-3" onchange="mainkanSuaraKlik(); periksaGreenChallengeMisi4();" style="background: #1e293b; color: #ffffff; border: 1px solid #10b981; border-radius: 0.35rem; padding: 0.25rem; font-size: 1rem; width: 100%;">
+                <div style="font-size: 16pt; color: #ffffff; line-height: 1.3;">3. Memanfaatkan kembali (Reuse) properti panggung lama.</div>
+                <select id="gc-misi4-3" onchange="mainkanSuaraKlik(); periksaGreenChallengeMisi4();" style="background: #1e293b; color: #ffffff; border: 1px solid #10b981; border-radius: 0.35rem; padding: 0.25rem; font-size: 16pt; width: 100%;">
                     <option value="">-- Pilih Kategori --</option>
                     <option value="benar">Ramah Lingkungan 🌱</option>
                     <option value="salah">Tidak Ramah Lingkungan ⚠️</option>
@@ -1461,8 +2901,8 @@ body.m3-overlay-open{overflow:hidden;}
          <!-- KOTAK KUIS FORMATIF MISI 4 -->
         <div style="background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius: 0.65rem; padding: 0.65rem; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-                <div style="font-size: 1rem; font-weight: 800; color: #ffffff;">📝 KUIS FORMATIF MISI 4</div>
-                <p style="font-size: 1rem; color: #ffffff; margin-top: 0.25rem; line-height: 1.35;">
+                <div style="font-size: 16pt; font-weight: 700; color: #ffffff;">📝 KUIS FORMATIF MISI 4</div>
+                <p style="font-size: 16pt; font-weight:300; color: #ffffff; margin-top: 0.25rem; line-height: 1.35;">
                     Evaluasi pemahaman Anda mengenai siklus hidup produk, penghematan energi, dan efisiensi penyiaran digital.
                 </p>
             </div>
@@ -1501,14 +2941,46 @@ body.m3-overlay-open{overflow:hidden;}
 
     </div>
 
-    <!-- 5). NAVIGASI BAWAH: TOMBOL KEMBALI (POJOK KIRI BAWAH) & TOMBOL LANJUT (POJOK KANAN BAWAH) -->
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 0.4rem; border-top: 1px solid rgba(255,255,255,0.15); flex-shrink: 0; margin-top: 0.2rem;">
-        <button class="btn-info" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-dashboard');" style="background: #334155; color: #ffffff; border: none; padding: 0.4rem 1.1rem; border-radius: 0.4rem; font-size: 0.75rem; font-weight: 700; cursor: pointer;">
-            ⬅️ Kembali
+    <!-- =====================================================
+         4. NAVIGASI BAWAH
+         ===================================================== -->
+    <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:0.25rem;
+        border-top:1px solid rgba(255,255,255,0.2);
+        flex-shrink:0;
+        margin-top:0.1rem;
+    ">
+
+        <!-- KEMBALI -->
+        <button
+            type="button"
+            class="misi2-nav-button"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-misi3');"
+            title="Kembali ke Dashboard"
+        >
+            <img
+                src="images/kembali.png"
+                alt="Kembali"
+                class="misi2-nav-image"
+            >
         </button>
-        
-        <button class="btn-utama" onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-final');" style="background: linear-gradient(135deg, #eab308, #ca8a04); color: #ffffff; border: none; padding: 0.45rem 1.4rem; border-radius: 9999px; font-weight: 800; font-size: 0.75rem; cursor: pointer; box-shadow: 0 4px 12px rgba(234, 179, 8, 0.4);">
-            Lanjut ke Final Mission 🏆 ➡️
+
+
+        <!-- LANJUT -->
+        <button
+            type="button"
+            class="misi2-nav-button"
+            onclick="mainkanSuaraKlik(); bukaSubHalaman('sub-final');"
+            title="Lanjut ke Misi 3"
+        >
+            <img
+                src="images/lanjut.png"
+                alt="Lanjut ke Misi 3"
+                class="misi2-nav-image"
+            >
         </button>
     </div>
 
@@ -1541,7 +3013,7 @@ function checkGreenAction(selectElement, typeCorrect) {
 /* Header Kompakt */
 .final-header-container {
     position: relative;
-    background: linear-gradient(135deg, #78350f 0%, #0f172a 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
     border: 2px solid #eab308;
     padding: 1rem 1.25rem;
     border-radius: 10px;
@@ -1558,15 +3030,15 @@ function checkGreenAction(selectElement, typeCorrect) {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-weight: 800;
-    font-size: 0.88rem;
+    font-weight: 500;
+    font-size: 16pt;
 }
 
 .agent-avatar-icon {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: #eab308;
+    background:#0540F2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1582,7 +3054,7 @@ function checkGreenAction(selectElement, typeCorrect) {
     border-radius: 6px;
     font-weight: 800;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: transform 0.2s;
 }
 .btn-beranda-top:hover { transform: scale(1.05); }
@@ -1758,10 +3230,37 @@ function checkGreenAction(selectElement, typeCorrect) {
     border: none;
 }
 .btn-nav-action.btn-next:hover { background: #ca8a04; }
+/* =========================================================
+   FINAL MISSION - NAVIGASI BAWAH
+   BENAR-BENAR TERPISAH DARI KOTAK SOAL
+   ========================================================= */
+
+.final-bottom-nav {
+    position: static !important;
+
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    width: 100% !important;
+    min-height: 3.2rem !important;
+
+    margin-top: 1.25rem !important;
+    padding: 0.6rem 0 !important;
+
+    border-top: 1px solid rgba(255,255,255,0.2) !important;
+
+    background: transparent !important;
+
+    clear: both !important;
+    flex-shrink: 0 !important;
+
+    z-index: 1 !important;
+}
 </style>
 
 <!-- SUB-VIEW: FINAL MISSION -->
-<div id="sub-final" class="sub-view hidden" style="display: flex; flex-direction: column; gap: 1rem;">
+<div id="sub-final" class="sub-view hidden" style="display: flex; flex-direction: column; gap: 1rem; overflow-y: auto; overflow-x: hidden; max-height: 100vh; padding-bottom: 1rem;">
 
     <!-- HEADER FINAL MISSION: AGENT DI SAMPING JUDUL SEPERTI MISI 2 -->
     <div class="final-header-container final-header-m2-style">
@@ -1771,8 +3270,8 @@ function checkGreenAction(selectElement, typeCorrect) {
                 <span>FINAL MISSION</span>
                 <h2>Virtual Creative Media Project</h2>
             </div>
-            <div class="final-greeting"><strong>👋 Agent Nisa:</strong> "Halo, Kawan! Mari atur strategi proyek media kita dengan cermat dan bertanggung jawab." 🎬</div>
-            <p class="final-brief-title">Susun strategi kampanye edukasi generasi muda peduli lingkungan dengan mempertimbangkan teknologi, media, AI, regulasi, dan Green Broadcasting.</p>
+            <div class="final-greeting"><strong>👋 </strong> "Halo, Kawan! Mari atur strategi proyek media kita dengan cermat dan bertanggung jawab, mempertimbangkan teknologi, media, AI, regulasi, dan Green Broadcasting." 🎬</div>
+           
         </div>
         <button class="btn-beranda-top" type="button" onclick="mainkanSuaraKlik(); navigasiKeSub('sub-dashboard')">🏠 Beranda</button>
     </div>
@@ -1780,8 +3279,8 @@ function checkGreenAction(selectElement, typeCorrect) {
     <!-- BRIEF PROYEK -->
     <div class="brief-proyek-bg">
         <div class="brief-proyek-overlay">
-            <div style="font-weight:bold; font-size:0.95rem; margin-bottom:0.25rem;">📋 Brief Proyek: "Youth Voice for Green Future"</div>
-            <p style="font-size: 0.8rem; line-height:1.4; margin:0;">
+            <div style="font-weight:bold; font-size:1.2rem; margin-bottom:0.25rem;">📋 Brief Proyek: "Youth Voice for Green Future"</div>
+            <p style="font-size: 1rem; line-height:1.4; margin:0;">
                 Tentukan keputusan terbaik pada 5 tahap produksi di bawah ini, lalu klik tombol Review untuk melihat evaluasi proyek Anda.
             </p>
             <div style="background:#334155; height:6px; border-radius:3px; margin-top:0.5rem; overflow:hidden;">
@@ -1795,55 +3294,55 @@ function checkGreenAction(selectElement, typeCorrect) {
     <div class="grid-tahap-top">
         <!-- TAHAP 1 (Gambar Berjajar Menyamping) -->
         <div class="tahap-card-box" style="border-top: 3px solid #3b82f6;">
-            <div style="font-weight:bold; font-size:0.85rem;">1️⃣ Pilih Teknologi</div>
+            <div style="font-weight:bold; font-size:16pt;">1️⃣ Pilih Teknologi</div>
             <div class="horizontal-options-container">
                 <div class="img-click-card-sm" onclick="pilihTahap(1, 20, 'Camera Drone', this)">
-                    <img src="images/era_AI.png" alt="camera_drone">
-                    <div class="img-text-overlay-sm">Camera Drone</div>
+                    <img src="images/camera_drone.png" alt="camera_drone">
+                    <div class="img-text-overlay-sm">Kamera digital & drone sinematik</div>
                 </div>
                 <div class="img-click-card-sm" onclick="pilihTahap(1, 10, 'Smartphone', this)">
-                    <img src="images/digital.png" alt="smartphone">
-                    <div class="img-text-overlay-sm">Smart phone</div>
+                    <img src="images/smartphone.png" alt="smartphone">
+                    <div class="img-text-overlay-sm">Smartphone dengan stabilizer</div>
                 </div>
                 <div class="img-click-card-sm" onclick="pilihTahap(1, 0, 'Analog', this)">
-                    <img src="images/analog.png" alt="analog">
-                    <div class="img-text-overlay-sm">Analog</div>
+                    <img src="images/alat_analog.png" alt="analog">
+                    <div class="img-text-overlay-sm">Peralatan analog konvensional</div>
                 </div>
             </div>
         </div>
 
         <!-- TAHAP 2 (Gambar Berjajar Menyamping) -->
         <div class="tahap-card-box" style="border-top: 3px solid #10b981;">
-            <div style="font-weight:bold; font-size:0.85rem;">2️⃣ Pilih Media</div>
+            <div style="font-weight:bold; font-size:16pt;">2️⃣ Pilih Media</div>
             <div class="horizontal-options-container">
                 <div class="img-click-card-sm" onclick="pilihTahap(2, 20, 'Media Sosial', this)">
                     <img src="images/media_sosial.png" alt="media_sosial">
                     <div class="img-text-overlay-sm">Media Sosial</div>
                 </div>
                 <div class="img-click-card-sm" onclick="pilihTahap(2, 10, 'Website', this)">
-                    <img src="images/thumbnail.png" alt="website">
-                    <div class="img-text-overlay-sm">Website</div>
+                    <img src="images/website.png" alt="website">
+                    <div class="img-text-overlay-sm">Website & portal berita</div>
                 </div>
                 <div class="img-click-card-sm" onclick="pilihTahap(2, 0, 'Email', this)">
-                    <img src="images/jenis_media_sosial.png" alt="email">
-                    <div class="img-text-overlay-sm">Email</div>
+                    <img src="images/email.png" alt="email">
+                    <div class="img-text-overlay-sm">Email Newsletter</div>
                 </div>
             </div>
         </div>
 
         <!-- TAHAP 3 -->
         <div class="tahap-card-box" style="border-top: 3px solid #6b21a8;">
-            <div style="font-weight:bold; font-size:0.85rem;">3️⃣ Strategi AI</div>
+            <div style="font-weight:bold; font-size:16pt;">3️⃣ Strategi AI</div>
             <div class="std-click-card-sm" onclick="pilihTahap(3, 20, 'AI Terverifikasi Tim', this)">
-                <strong style="font-size:0.78rem;">🤖 AI Terverifikasi</strong>
+                <strong style="font-size:16pt;">🤖 AI Terverifikasi</strong>
                 <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Editing & subtitle, diverifikasi tim.</p>
             </div>
             <div class="std-click-card-sm" onclick="pilihTahap(3, 10, 'AI Tanpa Verifikasi', this)">
-                <strong style="font-size:0.78rem;">⚠️ AI Tanpa Pengecekan</strong>
-                <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">100% buatan AI, risiko keliru.</p>
+                <strong style="font-size:16pt;">⚠️ AI Tanpa Pengecekan</strong>
+                <p style="font-size:16pt; margin:0.1rem 0 0 0; opacity:0.8;">100% buatan AI, risiko keliru.</p>
             </div>
             <div class="std-click-card-sm" onclick="pilihTahap(3, 0, 'Tanpa AI Sama Sekali', this)">
-                <strong style="font-size:0.78rem;">🚫 Tanpa AI</strong>
+                <strong style="font-size:16pt;">🚫 Tanpa AI</strong>
                 <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Manual, kurang efisien.</p>
             </div>
         </div>
@@ -1853,43 +3352,43 @@ function checkGreenAction(selectElement, typeCorrect) {
     <div class="grid-tahap-bottom">
         <!-- TAHAP 4 -->
         <div class="tahap-card-box" style="border-top: 3px solid #2563eb;">
-            <div style="font-weight:bold; font-size:0.85rem;">4️⃣ Regulasi & Etika</div>
+            <div style="font-weight:bold; font-size:16pt;">4️⃣ Regulasi & Etika</div>
             <div class="std-click-card-sm" onclick="pilihTahap(4, 20, 'Mematuhi Regulasi & Hak Cipta', this)">
-                <strong style="font-size:0.78rem;">⚖️ Patuh Regulasi & Hak Cipta</strong>
+                <strong style="font-size:16pt;">⚖️ Patuh Regulasi & Hak Cipta</strong>
                 <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Data valid, cantumkan sumber.</p>
             </div>
             <div class="std-click-card-sm" onclick="pilihTahap(4, 10, 'Mengejar Tenggat Tanpa Verifikasi', this)">
-                <strong style="font-size:0.78rem;">⏱️ Kejar Deadline</strong>
-                <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Verifikasi dikurangi demi waktu.</p>
+                <strong style="font-size:16pt;">⏱️ Kejar Deadline</strong>
+                <p style="font-size:16pt; margin:0.1rem 0 0 0; opacity:0.8;">Verifikasi dikurangi demi waktu.</p>
             </div>
             <div class="std-click-card-sm" onclick="pilihTahap(4, 0, 'Menggunakan Karya Tanpa Izin', this)">
-                <strong style="font-size:0.78rem;">❌ Tanpa Izin Hak Cipta</strong>
-                <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Pakai karya orang tanpa hak.</p>
+                <strong style="font-size:16pt;">❌ Tanpa Izin Hak Cipta</strong>
+                <p style="font-size:16pt; margin:0.1rem 0 0 0; opacity:0.8;">Pakai karya orang tanpa hak.</p>
             </div>
         </div>
 
         <!-- TAHAP 5 -->
         <div class="tahap-card-box" style="border-top: 3px solid #059669;">
-            <div style="font-weight:bold; font-size:0.85rem;">5️⃣ Green Broadcasting</div>
+            <div style="font-weight:bold; font-size:16pt;">5️⃣ Green Broadcasting</div>
             <div class="std-click-card-sm" onclick="pilihTahap(5, 20, 'Produksi Hemat Energi & Reuse', this)">
-                <strong style="font-size:0.78rem;">🌱 Green Production</strong>
-                <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Hemat energi, paperless, reuse.</p>
+                <strong style="font-size:16pt;">🌱 Green Production</strong>
+                <p style="font-size:16pt; margin:0.1rem 0 0 0; opacity:0.8;">Hemat energi, paperless, reuse.</p>
             </div>
             <div class="std-click-card-sm" onclick="pilihTahap(5, 10, 'Hemat Energi Sebagian', this)">
-                <strong style="font-size:0.78rem;">🔋 Semi Green</strong>
-                <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Hemat energi belum konsisten.</p>
+                <strong style="font-size:16pt;">🔋 Semi Green</strong>
+                <p style="font-size:16pt; margin:0.1rem 0 0 0; opacity:0.8;">Hemat energi belum konsisten.</p>
             </div>
             <div class="std-click-card-sm" onclick="pilihTahap(5, 0, 'Boros Kertas & Properti Single-use', this)">
-                <strong style="font-size:0.78rem;">🗑️ Non-Ramah Lingkungan</strong>
-                <p style="font-size:0.68rem; margin:0.1rem 0 0 0; opacity:0.8;">Cetak dokumen & alat sekali pakai.</p>
+                <strong style="font-size:16pt;">🗑️ Non-Ramah Lingkungan</strong>
+                <p style="font-size:16pt; margin:0.1rem 0 0 0; opacity:0.8;">Cetak dokumen & alat sekali pakai.</p>
             </div>
         </div>
 
         <!-- TOMBOL REVIEW -->
         <div class="review-action-box">
             <div style="text-align:center;">
-                <p style="font-size:0.8rem; font-weight:bold; margin:0;">Evaluasi Keputusan</p>
-                <p style="font-size:0.7rem; opacity:0.8; margin:0.1rem 0 0 0;">Klik untuk melihat skor proyek.</p>
+                <p style="font-size:1rem; font-weight:bold; margin:0;">Evaluasi Keputusan</p>
+                <p style="font-size:1rem; opacity:0.8; margin:0.1rem 0 0 0;">Klik untuk melihat skor proyek.</p>
             </div>
             <button class="btn-lanjut" onclick="tampilkanHasilProyek()" style="background:#eab308; color:#1e293b !important; font-weight:500; font-size:0.85rem; padding:0.6rem 0.8rem; border-radius:6px; border:none; cursor:pointer; width:100%;">
                 Review Hasil Proyek ➡️
@@ -1900,7 +3399,7 @@ function checkGreenAction(selectElement, typeCorrect) {
     <!-- MODAL POPUP HASIL PROYEK (OVERLAY) -->
     <div id="box-hasil-final-modal" class="modal-overlay hidden">
         <div class="modal-content-box">
-            <h3 style="text-align:center; font-size:1.2rem; font-weight:900; margin-top:0; margin-bottom:0.75rem;">🎬 Hasil Proyek: Youth Voice for Green Future</h3>
+            <h3 style="text-align:center; font-size:1.33rem; font-weight:500; margin-top:0; margin-bottom:0.75rem;">🎬 Hasil Proyek: Youth Voice for Green Future</h3>
             
             <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:0.75rem;">
                 <div style="font-size:0.75rem; font-weight:600;">SKOR PROYEK</div>
@@ -1924,7 +3423,7 @@ function checkGreenAction(selectElement, typeCorrect) {
             <div style="margin-top:0.85rem; display:flex; flex-direction:column; align-items:center; background:rgba(234, 179, 8, 0.1); padding:0.6rem; border-radius:6px; border:1px dashed #eab308;">
                 <div class="badge-icon-circle unlocked" style="width:3.2rem; height:3.2rem; font-size:1.6rem; background:#fef3c7; border-color:#eab308; display:flex; align-items:center; justify-content:center; border-radius:50%;">🏆</div>
                 <div style="font-weight:900; font-size:0.9rem; margin-top:0.25rem;">Creative Media Champion</div>
-                <p id="final-badge-status" style="font-size:0.7rem; text-align:center; margin-top:0.1rem; margin-bottom:0; font-weight:700;"></p>
+                <p id="final-badge-status" style="font-size:0.75rem; text-align:center; margin-top:0.1rem; margin-bottom:0; font-weight:700;"></p>
             </div>
 
             <button onclick="tutupModalHasil()" style="margin-top:1rem; background:#eab308; color:#1e293b !important; font-weight:bold; width:100%; padding:0.5rem; border-radius:6px; border:none; cursor:pointer; font-size:0.85rem;">
@@ -2147,7 +3646,7 @@ function tutupModalHasil() {
 #sub-evaluasi button,
 #sub-evaluasi textarea {
     color: #ffffff !important;
-    font-size: 12pt !important;
+    font-size: 16pt !important;
 }
 
 #sub-evaluasi h2, 
@@ -2363,6 +3862,60 @@ function tutupModalHasil() {
     margin-top: 0.85rem;
     text-align: center;
 }
+/* ===== FINAL MISSION SCROLL ===== */
+#sub-final {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 100vh !important;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 1.5rem;
+    scrollbar-width: thin;
+}
+/* ===== TOMBOL TAHAP FINAL MISSION ===== */
+#sub-final .tahap-card-box {
+    position: relative;
+    box-sizing: border-box;
+}
+
+#sub-final .final-stage-stepbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    box-sizing: border-box;
+}
+
+#sub-final .final-stage-counter {
+    font-size: 0.7rem;
+    opacity: 0.75;
+    text-align: center;
+}
+
+#sub-final .final-stage-next {
+    display: block;
+    width: auto;
+    min-width: 100px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 700px;
+    background: linear-gradient(135deg, #eab308, #ca8a04);
+    color: #1e293b;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#sub-final .final-stage-next:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
 </style>
 
 <!-- SUB-VIEW: EVALUASI AKHIR -->
@@ -2380,14 +3933,14 @@ function tutupModalHasil() {
             </div>
             <button class="btn-beranda-top" onclick="navigasiKeSub('sub-dashboard')">🏠 Beranda</button>
         </div>
-        <p style="margin-top: 0.4rem; opacity: 0.95;">
+        <p style="font-size: 16pt; margin-top: 0.4rem; opacity: 0.95;">
             "Halo, kawan-kawan. Kini saatnya membuktikan kemampuanmu. Selamat mengerjakan!"
         </p>
     </div>
 
     <!-- INFORMASI TEKNIS -->
     <div class="info-box-eval">
-        <div style="font-weight: 800; margin-bottom: 0.25rem;">📋 Informasi & Ketentuan Ujian:</div>
+        <div style="font-size:16pt; font-weight: 700; margin-bottom: 0.25rem;">📋 Informasi & Ketentuan Ujian:</div>
         <div class="info-grid">
             <div class="info-card-item">⏱ <strong>Jumlah Soal:</strong> 15 PG + 1 Studi Kasus</div>
             <div class="info-card-item">💯 <strong>KKM Kelulusan:</strong> 75</div>
@@ -2400,48 +3953,80 @@ function tutupModalHasil() {
 
         <!-- HALAMAN 1 (Soal 1 & 2) -->
         <div class="eval-page-group" data-page="1">
-            <div class="eval-q-card eval-q-box" data-q="1" data-ans="B">
-                <p style="font-weight: 700;">1. Fungsi utama dari Report Text dalam komunikasi ilmiah atau teknis adalah...</p>
-                <label class="option-label"><input type="radio" name="q1" value="A" onclick="suaraOpsi()"> A. Menghibur pembaca dengan cerita imajinatif.</label>
-                <label class="option-label"><input type="radio" name="q1" value="B" onclick="suaraOpsi()"> B. Menyampaikan informasi apa adanya berdasarkan hasil pengamatan sistematis.</label>
-                <label class="option-label"><input type="radio" name="q1" value="C" onclick="suaraOpsi()"> C. Membujuk masyarakat untuk membeli produk penyiaran.</label>
+         <div class="eval-q-card eval-q-box" data-q="1" data-ans="B">
+                <p style="font-weight: 700;">1. Salah satu perubahan penting dalam perkembangan teknologi broadcasting adalah peralihan dari sistem analog menuju sistem digital. Dampak utama perubahan tersebut adalah...</p>
+                <label class="option-label"><input type="radio" name="q1" value="A" onclick="suaraOpsi()">   A. Semua perangkat produksi menjadi sepenuhnya tidak membutuhkan listrik.</label>
+                <label class="option-label"><input type="radio" name="q1" value="B" onclick="suaraOpsi()"> B. Pengolahan, penyimpanan, dan distribusi konten dapat dilakukan dengan teknologi digital yang lebih fleksibel.</label>
+                <label class="option-label"><input type="radio" name="q1" value="C" onclick="suaraOpsi()">        C. Produksi broadcasting tidak lagi membutuhkan perangkat kamera dan audio.</label>
             </div>
-            <div class="eval-q-card eval-q-box" data-q="2" data-ans="A">
-                <p style="font-weight: 700;">2. Struktur umum (Generic Structure) dari sebuah Report Text terdiri atas...</p>
-                <label class="option-label"><input type="radio" name="q2" value="A" onclick="suaraOpsi()"> A. General Classification & Description</label>
-                <label class="option-label"><input type="radio" name="q2" value="B" onclick="suaraOpsi()"> B. Orientation, Complication, Resolution</label>
-                <label class="option-label"><input type="radio" name="q2" value="C" onclick="suaraOpsi()"> C. Thesis, Arguments, Reiteration</label>
+            <div class="eval-q-card eval-q-box" data-q="2" data-ans="C">
+                <p style="font-weight: 700;">        2. Dalam perkembangan teknologi produksi broadcasting dan perfilman, penggunaan kamera digital dan perangkat lunak editing memberikan perubahan terutama pada...</p>
+                <label class="option-label"><input type="radio" name="q2" value="A" onclick="suaraOpsi()"> A. Penghapusan seluruh proses perencanaan sebelum produksi.</label>
+                <label class="option-label"><input type="radio" name="q2" value="B" onclick="suaraOpsi()"> B. Pengurangan kebutuhan terhadap kreativitas kru produksi.</label>
+                <label class="option-label"><input type="radio" name="q2" value="C" onclick="suaraOpsi()">C. Kemudahan merekam, mengolah, menyimpan, dan menyunting materi audiovisual secara digital.</label>
             </div>
         </div>
-
         <!-- HALAMAN 2 (Soal 3 & 4) -->
-        <div class="eval-page-group" data-page="2" style="display: none;">
-            <div class="eval-q-card eval-q-box" data-q="3" data-ans="C">
-                <p style="font-weight: 700;">3. Ciri kebahasaan yang paling dominan digunakan dalam Report Text adalah...</p>
-                <label class="option-label"><input type="radio" name="q3" value="A" onclick="suaraOpsi()"> A. Past Tense</label>
-                <label class="option-label"><input type="radio" name="q3" value="B" onclick="suaraOpsi()"> B. Future Tense</label>
-                <label class="option-label"><input type="radio" name="q3" value="C" onclick="suaraOpsi()"> C. Simple Present Tense</label>
-            </div>
-            <div class="eval-q-card eval-q-box" data-q="4" data-ans="B">
-                <p style="font-weight: 700;">4. Mengapa teks laporan harus menggunakan kata benda umum (General Nouns) seperti "Computers" bukan "My Computer"?</p>
-                <label class="option-label"><input type="radio" name="q4" value="A" onclick="suaraOpsi()"> A. Agar teks terlihat lebih pendek.</label>
-                <label class="option-label"><input type="radio" name="q4" value="B" onclick="suaraOpsi()"> B. Karena objek yang dilaporkan berupa kelompok atau komoditas secara umum.</label>
-                <label class="option-label"><input type="radio" name="q4" value="C" onclick="suaraOpsi()"> C. Menghindari kesalahan hak cipta merek.</label>
-            </div>
-        </div>
+<div class="eval-page-group" data-page="2" style="display: none;">
 
+    <!-- SOAL 3 -->
+    <div class="eval-q-card eval-q-box" data-q="3" data-ans="A">
+        <p style="font-size:16pt;font-weight:700;">
+            3. Pernyataan yang paling tepat untuk menjelaskan media digital adalah...
+        </p>
+
+        <label class="option-label">
+            <input type="radio" name="q3" value="A" onclick="suaraOpsi()">
+            A. Media yang menggunakan teknologi digital untuk membuat, menyimpan, mengolah, dan menyebarkan informasi atau konten.
+        </label>
+
+        <label class="option-label">
+            <input type="radio" name="q3" value="B" onclick="suaraOpsi()">
+            B. Media yang hanya dapat digunakan untuk menonton siaran televisi analog.
+        </label>
+
+        <label class="option-label">
+            <input type="radio" name="q3" value="C" onclick="suaraOpsi()">
+            C. Media yang hanya digunakan untuk menyimpan dokumen cetak.
+        </label>
+    </div>
+
+    <!-- SOAL 4 -->
+    <div class="eval-q-card eval-q-box" data-q="4" data-ans="B">
+        <p style="font-size:16pt;font-weight:700;">
+            4. Seorang kreator ingin menyampaikan video pendek kepada masyarakat melalui platform yang memungkinkan pengguna berbagi dan menonton konten audiovisual. Jenis media digital yang paling sesuai adalah...
+        </p>
+
+        <label class="option-label">
+            <input type="radio" name="q4" value="A" onclick="suaraOpsi()">
+            A. Media cetak konvensional.
+        </label>
+
+        <label class="option-label">
+            <input type="radio" name="q4" value="B" onclick="suaraOpsi()">
+            B. Platform berbagi video.
+        </label>
+
+        <label class="option-label">
+            <input type="radio" name="q4" value="C" onclick="suaraOpsi()">
+            C. Arsip dokumen offline tanpa fitur distribusi.
+        </label>
+    </div>
+
+</div>
+       
         <!-- HALAMAN 3 (Soal 5 & 6) -->
         <div class="eval-page-group" data-page="3" style="display: none;">
             <div class="eval-q-card eval-q-box" data-q="5" data-ans="C">
-                <p style="font-weight: 700;">5. Manakah yang termasuk ke dalam bagian "General Classification" pada laporan instalasi listrik?</p>
-                <label class="option-label"><input type="radio" name="q5" value="A" onclick="suaraOpsi()"> A. Kabel fasa dipasang pada terminal bagian kanan sakelar.</label>
-                <label class="option-label"><input type="radio" name="q5" value="B" onclick="suaraOpsi()"> B. Berdasarkan pengujian, daya serap lampu LED ini mencapai 90% efisiensi.</label>
-                <label class="option-label"><input type="radio" name="q5" value="C" onclick="suaraOpsi()"> C. Panel surya adalah alat konversi energi cahaya matahari menjadi energi listrik.</label>
+                <p style="font-weight: 700;">        5. Seorang siswa menggunakan AI untuk membantu membuat konten media. Tindakan yang paling tepat dan bertanggung jawab adalah...</p>
+                <label class="option-label"><input type="radio" name="q5" value="A" onclick="suaraOpsi()"> A. Menggunakan semua informasi dari AI tanpa memeriksa kebenarannya.</label>
+                <label class="option-label"><input type="radio" name="q5" value="B" onclick="suaraOpsi()"> B. Menganggap hasil AI selalu benar karena dibuat menggunakan teknologi.</label>
+                <label class="option-label"><input type="radio" name="q5" value="C" onclick="suaraOpsi()"> C. Memeriksa dan memverifikasi informasi dari AI serta memperhatikan aturan dan etika dalam penggunaan konten.</label>
             </div>
             <div class="eval-q-card eval-q-box" data-q="6" data-ans="A">
                 <p style="font-weight: 700;">6. Dalam validasi data menggunakan AI, apa yang dimaksud dengan fenomena "AI Hallucination"?</p>
                 <label class="option-label"><input type="radio" name="q6" value="A" onclick="suaraOpsi()"> A. Kondisi di mana AI memberikan jawaban keliru yang terdengar meyakinkan namun fiktif.</label>
-                <label class="option-label"><input type="radio" name="q6" value="B" onclick="suaraOpsi()"> B. Kecepatan pemrosesan server data AI yang melambat.</label>
+                <label class="option-label"><input type="radio" name="q6" value="B" onclick="suaraOpsi()"> B. Kecepatan pemrosesan server data AI melambat.</label>
                 <label class="option-label"><input type="radio" name="q6" value="C" onclick="suaraOpsi()"> C. Kemampuan AI mengenali wajah operator studio secara otomatis.</label>
             </div>
         </div>
@@ -2804,10 +4389,8 @@ updatePaginationUI();
                 <button type="button" onclick="mainkanSuaraKlik(); tampilkanPopupRefleksi();">Buka Pertanyaan Refleksi ✍️</button>
                 <div id="feedback-refleksi" class="hidden ref-feedback"></div>
             </div>
-
-        </div>
-
-        <div class="ref-certificate-col">
+</div>
+<div class="ref-certificate-col">
             <div class="ref-cert-input">
                 <label for="input-nama-sertifikat">✍️ Nama untuk sertifikat</label>
                 <div><input type="text" id="input-nama-sertifikat" placeholder="Ketik nama lengkap"><button type="button" onclick="mainkanSuaraKlik(); updateNamaSertifikat();">Terapkan</button></div>
@@ -2843,14 +4426,14 @@ updatePaginationUI();
 <div id="popup-feedback-selesai" class="popup-overlay" onclick="tutupPopup('popup-feedback-selesai')" style="display:none; position:fixed; inset:0; z-index:10050; background:rgba(2,6,23,0.82); align-items:center; justify-content:center; padding:1rem;">
     <div class="popup-box" onclick="event.stopPropagation()" style="max-width:34rem; width:100%; background:linear-gradient(135deg,#0f172a,#172554); border:1.5px solid #22c55e; border-radius:1rem; padding:1.5rem; color:#ffffff; text-align:center; box-shadow:0 20px 50px rgba(0,0,0,0.45);">
         <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; margin-bottom:0.8rem;">
-            <img src="images/agent_nisa.png" alt="Agent Nisa" style="height:5rem; width:auto; filter:drop-shadow(0 5px 8px rgba(0,0,0,0.4));">
+            <img src="images/agent_y.png" alt="Agent Nisa" style="height:5rem; width:auto; filter:drop-shadow(0 5px 8px rgba(0,0,0,0.4));">
             <div style="text-align:left;">
-                <div style="font-size:0.72rem; font-weight:800; color:#86efac; letter-spacing:0.08em; text-transform:uppercase;">Agent Nisa</div>
+                <div style="font-size:0.72rem; font-weight:800; color:#ffffff; letter-spacing:0.08em; text-transform:uppercase;">Agent Nisa:</div>
                 <div style="font-size:1.05rem; font-weight:900; color:#ffffff;">🎉 Perjalanan Selesai!</div>
             </div>
         </div>
         <div style="background:rgba(34,197,94,0.12); border:1px solid rgba(34,197,94,0.35); border-radius:0.75rem; padding:1rem; margin-bottom:1rem;">
-            <p style="margin:0; font-size:1rem; line-height:1.55; color:#ffffff; font-weight:700;">“Selamat, Kawan, Kamu telah berhasil menyelesaikan seluruh misi.”</p>
+            <p style="margin:0; font-size:1rem; line-height:1.55; color:#ffffff; font-weight:700;">“Selamat, Kawan! Kamu telah berhasil menyelesaikan seluruh misi.”</p>
         </div>
         <button type="button" onclick="tutupPopup('popup-feedback-selesai'); bukaSubHalaman('sub-dashboard');" style="background:#22c55e; color:#052e16; border:none; padding:0.55rem 1.4rem; border-radius:9999px; font-weight:800; cursor:pointer;">Kembali ke Dashboard</button>
     </div>
@@ -2982,35 +4565,155 @@ updatePaginationUI();
                 feedback.style.color = '#dc2626';
             }
         }
+             // =========================================================
+// KUIS FORMATIF GENERIK MISI 1–4
+// - Menilai jawaban
+// - Memberi warna hijau pada jawaban benar
+// - Memberi warna merah pada jawaban salah
+// - Berlaku untuk Misi 1, 2, 3, dan 4
+// =========================================================
+function periksaKuisGenerik(kunciJawaban, hasilElId) {
+    let benar = 0;
+    let belumDijawab = 0;
 
-        // ====== KUIS FORMATIF (GENERIK UNTUK SEMUA MISI) ======
-        function periksaKuisGenerik(kunciJawaban, hasilElId) {
-            let benar = 0;
-            let belumDijawab = 0;
-            Object.keys(kunciJawaban).forEach(namaSoal => {
-                const dipilih = document.querySelector(`input[name="${namaSoal}"]:checked`);
-                if (!dipilih) { belumDijawab++; return; }
-                if (dipilih.value === kunciJawaban[namaSoal]) benar++;
-            });
-            const hasilBox = document.getElementById(hasilElId);
-            if (!hasilBox) return false;
-            hasilBox.classList.remove('hidden');
-            if (belumDijawab > 0) {
-                hasilBox.style.background='#fef3c7'; hasilBox.style.color='#92400e';
-                hasilBox.innerHTML=`<div style="font-size:12pt;font-weight:800;">⚠️ Masih ada ${belumDijawab} soal yang belum dijawab. Silakan lengkapi terlebih dahulu.</div>`;
-                return false;
-            }
-            const total=Object.keys(kunciJawaban).length;
-            if (benar===total) {
-                mainkanSuaraBenar(); hasilBox.style.background='transparent';
-                hasilBox.innerHTML=`<div class="quiz-feedback-agent correct"><img src="images/agent_y.png" alt="Agent Y" onerror="this.onerror=null;this.src='images/agent_2.png';"><div><div class="qfb-title">🎉 Luar Biasa! Semua jawaban benar!</div><div class="qfb-text">Kamu berhasil menjawab ${benar} dari ${total} soal dengan tepat.</div></div></div>`;
-            } else {
-                mainkanSuaraSalah(); hasilBox.style.background='transparent';
-                hasilBox.innerHTML=`<div class="quiz-feedback-agent wrong"><img src="images/agent_5.png" alt="Agent 5" onerror="this.onerror=null;this.src='images/agent_n.png';"><div><div class="qfb-title">🔎 Masih ada jawaban yang salah.</div><div class="qfb-text">Jawaban benar ${benar} dari ${total}. Pelajari kembali materi dan coba lagi, ya!</div></div></div>`;
-            }
-            return true;
+    Object.keys(kunciJawaban).forEach(namaSoal => {
+
+        const inputDipilih = document.querySelector(
+            `input[name="${namaSoal}"]:checked`
+        );
+
+        // Cari kotak soal tempat radio button berada
+        const semuaInput = document.querySelectorAll(
+            `input[name="${namaSoal}"]`
+        );
+
+        let kotakSoal = null;
+
+        if (semuaInput.length > 0) {
+            kotakSoal = semuaInput[0].closest('.kuis-soal-box');
         }
 
+        // Hapus warna hasil sebelumnya
+        if (kotakSoal) {
+            kotakSoal.classList.remove(
+                'jawaban-benar',
+                'jawaban-salah'
+            );
+        }
+
+        // Jika belum dijawab
+        if (!inputDipilih) {
+            belumDijawab++;
+            return;
+        }
+
+        // Periksa jawaban siswa
+        if (inputDipilih.value === kunciJawaban[namaSoal]) {
+
+            benar++;
+
+            // Kotak soal menjadi hijau
+            if (kotakSoal) {
+                kotakSoal.classList.add('jawaban-benar');
+            }
+
+        } else {
+
+            // Kotak soal menjadi merah
+            // KUNCI JAWABAN TIDAK DITAMPILKAN
+            if (kotakSoal) {
+                kotakSoal.classList.add('jawaban-salah');
+            }
+        }
+    });
+
+    const hasilBox = document.getElementById(hasilElId);
+
+    if (!hasilBox) return false;
+
+    hasilBox.classList.remove('hidden');
+
+    // Jika masih ada soal yang belum dijawab
+    if (belumDijawab > 0) {
+
+        hasilBox.style.background = '#fef3c7';
+        hasilBox.style.color = '#92400e';
+
+        hasilBox.innerHTML = `
+            <div style="font-size:16pt;font-weight:800;">
+                ⚠️ Masih ada ${belumDijawab} soal yang belum dijawab.
+                Silakan lengkapi terlebih dahulu.
+            </div>
+        `;
+
+        return false;
+    }
+
+    const total = Object.keys(kunciJawaban).length;
+
+    // SEMUA BENAR
+    if (benar === total) {
+
+        mainkanSuaraBenar();
+
+        hasilBox.style.background = 'transparent';
+        hasilBox.style.color = '#ffffff';
+
+        hasilBox.innerHTML = `
+            <div class="quiz-feedback-agent correct">
+                <img
+                    src="images/agent_y.png"
+                    alt="Agent Y"
+                    onerror="this.onerror=null;this.src='images/agent_2.png';"
+                >
+
+                <div>
+                    <div class="qfb-title">
+                        🎉 Luar Biasa! Semua jawaban benar!
+                    </div>
+
+                    <div class="qfb-text">
+                        Kamu berhasil menjawab ${benar} dari ${total}
+                        soal dengan tepat.
+                    </div>
+                </div>
+            </div>
+        `;
+
+        return true;
+
+    } else {
+
+        // MASIH ADA JAWABAN SALAH
+        mainkanSuaraSalah();
+
+        hasilBox.style.background = 'transparent';
+        hasilBox.style.color = '#ffffff';
+
+        hasilBox.innerHTML = `
+            <div class="quiz-feedback-agent wrong">
+                <img
+                    src="images/agent_5.png"
+                    alt="Agent"
+                    onerror="this.onerror=null;this.src='images/agent_n.png';"
+                >
+
+                <div>
+                    <div class="qfb-title">
+                        🔎 Masih ada jawaban yang salah.
+                    </div>
+
+                    <div class="qfb-text">
+                        Periksa kembali kotak soal yang berwarna merah,
+                        pelajari kembali materi, lalu coba lagi.
+                    </div>
+                </div>
+            </div>
+        `;
+
+        return false;
+    }
+}
         function periksaKuisMisi1() {
             const sudahDikerjakan = periksaKuisGenerik({ 'km1-1': 'a', 'km1-2': 'b', 'km1-3': 'b' }, 'kuis-misi1-hasil');
             if (sudahDikerjakan) tandaiMisiSelesai(1);
@@ -3027,6 +4730,8 @@ updatePaginationUI();
             const sudahDikerjakan = periksaKuisGenerik({ 'km4-1': 'a', 'km4-2': 'a', 'km4-3': 'a' }, 'kuis-misi4-hasil');
             if (sudahDikerjakan) tandaiMisiSelesai(4);
         }
+
+
 
         // ====== PROGRESS BELAJAR ======
         // 6 tugas utama yang dihitung: Misi 1-4, Final Mission, Evaluasi Akhir.
@@ -3172,9 +4877,14 @@ updatePaginationUI();
         function setProgressRing(persen) {
             persen = Math.max(0, Math.min(100, Number(persen) || 0));
             var ring = document.getElementById('circle-progress-utama');
+            var track = document.querySelector('#circle-progress-utama .circle-progress-track');
             var fill = document.getElementById('circle-progress-fill');
             var label = document.getElementById('circle-progress-label');
             if (ring) ring.setAttribute('aria-valuenow', String(persen));
+            if (track) {
+                // Pada 100%, hilangkan sisa garis abu-abu agar seluruh lingkaran hijau.
+                track.style.stroke = persen >= 100 ? '#22c55e' : '#cbd5e1';
+            }
             if (fill) {
                 fill.style.strokeDasharray = '100';
                 fill.style.strokeDashoffset = String(100 - persen);
@@ -3219,88 +4929,346 @@ updatePaginationUI();
             }
         }
 
-        // ====== REFLEKSI & SERTIFIKAT ======
-        function tampilkanPopupRefleksi() {
-            var p=document.getElementById('popup-refleksi');
-            if(p) p.style.display='flex';
+       // ====== REFLEKSI & SERTIFIKAT ======
+function tampilkanPopupRefleksi() {
+    var p = document.getElementById('popup-refleksi');
+    if (p) p.style.display = 'flex';
+}
+
+function selesaikanRefleksiDariPopup() {
+    const textareas = document.querySelectorAll('#popup-refleksi .refleksi-input');
+    let semuaTerisi = true;
+
+    textareas.forEach(function(ta) {
+        if (!ta.value.trim()) {
+            semuaTerisi = false;
+            ta.style.borderColor = '#ef4444';
+        } else {
+            ta.style.borderColor = '#22c55e';
         }
-        function selesaikanRefleksiDariPopup() {
-            const textareas=document.querySelectorAll('#popup-refleksi .refleksi-input');
-            let semuaTerisi=true;
-            textareas.forEach(function(ta){if(!ta.value.trim()){semuaTerisi=false;ta.style.borderColor='#ef4444';}else{ta.style.borderColor='#22c55e';}});
-            const feedback=document.getElementById('feedback-refleksi');
-            if(!semuaTerisi){if(feedback){feedback.classList.remove('hidden');feedback.style.background='#fee2e2';feedback.style.color='#991b1b';feedback.textContent='⚠️ Mohon isi kedua kolom refleksi terlebih dahulu.';}return;}
-            if(feedback){feedback.classList.remove('hidden');feedback.style.background='#dcfce7';feedback.style.color='#166534';feedback.textContent='✅ Refleksi berhasil disimpan. Terima kasih atas komitmen belajarmu!';}
-            tutupPopup('popup-refleksi');
-            tampilkanFeedbackSelesai();
+    });
+
+    const feedback = document.getElementById('feedback-refleksi');
+
+    if (!semuaTerisi) {
+        if (feedback) {
+            feedback.classList.remove('hidden');
+            feedback.style.background = '#fee2e2';
+            feedback.style.color = '#991b1b';
+            feedback.textContent = '⚠️ Mohon isi kedua kolom refleksi terlebih dahulu.';
+        }
+        return;
+    }
+
+    if (feedback) {
+        feedback.classList.remove('hidden');
+        feedback.style.background = '#dcfce7';
+        feedback.style.color = '#166534';
+        feedback.textContent = '✅ Refleksi berhasil disimpan. Terima kasih atas komitmen belajarmu!';
+    }
+
+    // Aktifkan tombol TERAPKAN setelah refleksi selesai
+    const btnTerapkan = document.getElementById('btn-terapkan-nama');
+
+    if (btnTerapkan) {
+        btnTerapkan.disabled = false;
+        btnTerapkan.style.opacity = '1';
+        btnTerapkan.style.cursor = 'pointer';
+    }
+
+    tutupPopup('popup-refleksi');
+    tampilkanFeedbackSelesai();
+}
+
+
+function simpanRefleksiInstan() {
+    const textareas = document.querySelectorAll('#sub-refleksi .refleksi-input');
+    let semuaTerisi = true;
+
+    textareas.forEach(function(ta) {
+        if (ta.value.trim() === '') {
+            semuaTerisi = false;
+            ta.style.borderColor = '#ef4444';
+        } else {
+            ta.style.borderColor = '#22c55e';
+        }
+    });
+
+    const feedback = document.getElementById('feedback-refleksi');
+
+    if (feedback) {
+        feedback.classList.remove('hidden');
+    }
+
+    if (semuaTerisi) {
+
+        if (feedback) {
+            feedback.style.background = '#dcfce7';
+            feedback.style.color = '#166534';
+            feedback.textContent =
+                '✅ Lembar refleksi berhasil disimpan. Terima kasih atas komitmen belajarmu!';
         }
 
-        function simpanRefleksiInstan() {
-            const textareas = document.querySelectorAll('#sub-refleksi .refleksi-input');
-            let semuaTerisi = true;
-            textareas.forEach(ta => {
-                if (ta.value.trim() === '') {
-                    semuaTerisi = false;
-                    ta.style.borderColor = '#ef4444';
+        // Aktifkan tombol TERAPKAN
+        const btnTerapkan = document.getElementById('btn-terapkan-nama');
+
+        if (btnTerapkan) {
+            btnTerapkan.disabled = false;
+            btnTerapkan.style.opacity = '1';
+            btnTerapkan.style.cursor = 'pointer';
+        }
+
+    } else {
+
+        if (feedback) {
+            feedback.style.background = '#fee2e2';
+            feedback.style.color = '#991b1b';
+            feedback.textContent =
+                '⚠️ Mohon isi kedua kolom refleksi terlebih dahulu sebelum menyimpan.';
+        }
+
+    }
+}
+
+
+function updateNamaSertifikat() {
+    const input = document.getElementById('input-nama-sertifikat');
+    const display = document.getElementById('display-nama-sertifikat');
+
+    if (!input || !display) return;
+
+    const nama = input.value.trim();
+
+    if (nama === '') {
+        input.style.borderColor = '#ef4444';
+        input.focus();
+        return;
+    }
+
+    input.style.borderColor = '#cbd5e1';
+    display.textContent = nama;
+}
+
+function cetakSertifikatPengguna() {
+
+    const area = document.getElementById('cetak-area-sertifikat');
+    const displayNama = document.getElementById('display-nama-sertifikat');
+
+    if (!area || !displayNama) {
+        alert('Data sertifikat tidak ditemukan.');
+        return;
+    }
+
+    const nama = displayNama.textContent.trim();
+
+    if (
+        nama === '' ||
+        nama === '[ NAMA PESERTA DIDIK ]'
+    ) {
+        alert('Silakan isi nama dan klik "Terapkan" terlebih dahulu.');
+        const inputNama = document.getElementById('input-nama-sertifikat');
+        if (inputNama) inputNama.focus();
+        return;
+    }
+
+    /*
+     * CETAK SERTIFIKAT — DESAIN SAMA DENGAN PREVIEW
+     * ------------------------------------------------
+     * Sertifikat dikloning dari elemen yang sedang tampil.
+     * Semua computed style setiap elemen disalin menjadi inline style,
+     * sehingga CSS dari halaman utama tidak hilang ketika dibuka di
+     * jendela cetak.
+     */
+    const clone = area.cloneNode(true);
+
+    function salinComputedStyle(source, target) {
+        const computed = window.getComputedStyle(source);
+        let cssText = '';
+
+        for (let i = 0; i < computed.length; i++) {
+            const property = computed[i];
+            cssText += property + ':' + computed.getPropertyValue(property) + ';';
+        }
+
+        target.setAttribute('style', cssText);
+
+        const sourceChildren = source.children;
+        const targetChildren = target.children;
+
+        for (let i = 0; i < sourceChildren.length; i++) {
+            if (targetChildren[i]) {
+                salinComputedStyle(sourceChildren[i], targetChildren[i]);
+            }
+        }
+    }
+
+    salinComputedStyle(area, clone);
+
+    /*
+     * Ukuran asli preview dipertahankan sebagai basis skala.
+     * Sertifikat kemudian diperbesar proporsional untuk A4 landscape,
+     * tanpa mengubah susunan, font, border, atau jarak antar elemen.
+     */
+    const rect = area.getBoundingClientRect();
+    const previewWidth = rect.width || 520;
+    const previewHeight = rect.height || (previewWidth / 1.414);
+
+    const jendelaCetak = window.open(
+        '',
+        '_blank',
+        'width=1200,height=850'
+    );
+
+    if (!jendelaCetak) {
+        alert('Popup diblokir oleh browser. Mohon izinkan popup untuk situs ini.');
+        return;
+    }
+
+    jendelaCetak.document.open();
+    jendelaCetak.document.write(`
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sertifikat - ${nama.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+        background: #ffffff;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .print-sheet {
+        position: relative;
+        width: 297mm;
+        height: 210mm;
+        overflow: hidden;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .print-certificate-wrap {
+        position: relative;
+        width: ${previewWidth}px;
+        height: ${previewHeight}px;
+        flex: 0 0 auto;
+        transform-origin: center center;
+        transform: scale(
+            min(
+                calc(277mm / ${previewWidth}px),
+                calc(190mm / ${previewHeight}px)
+            )
+        );
+    }
+
+    .print-certificate-wrap > #cetak-area-sertifikat {
+        width: ${previewWidth}px !important;
+        height: ${previewHeight}px !important;
+        min-width: ${previewWidth}px !important;
+        min-height: ${previewHeight}px !important;
+        max-width: none !important;
+        max-height: none !important;
+        margin: 0 !important;
+        aspect-ratio: auto !important;
+    }
+
+    @media print {
+        @page {
+            size: A4 landscape;
+            margin: 0;
+        }
+
+        html,
+        body {
+            width: 297mm;
+            height: 210mm;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .print-sheet {
+            width: 297mm;
+            height: 210mm;
+            margin: 0;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="print-sheet">
+        <div class="print-certificate-wrap">
+            ${clone.outerHTML}
+        </div>
+    </div>
+</body>
+</html>
+    `);
+    jendelaCetak.document.close();
+
+    /*
+     * Tunggu gambar/logo/font lokal selesai dimuat sebelum print.
+     * Ini mencegah hasil PDF berbeda karena elemen belum selesai dirender.
+     */
+    const mulaiCetak = function () {
+        setTimeout(function () {
+            jendelaCetak.focus();
+            jendelaCetak.print();
+        }, 300);
+    };
+
+    if (jendelaCetak.document.fonts && jendelaCetak.document.fonts.ready) {
+        jendelaCetak.document.fonts.ready.then(function () {
+            const gambar = Array.from(jendelaCetak.document.images);
+
+            if (!gambar.length) {
+                mulaiCetak();
+                return;
+            }
+
+            let selesai = 0;
+
+            gambar.forEach(function (img) {
+                if (img.complete) {
+                    selesai++;
+                    if (selesai === gambar.length) mulaiCetak();
                 } else {
-                    ta.style.borderColor = '#22c55e';
+                    img.addEventListener('load', function () {
+                        selesai++;
+                        if (selesai === gambar.length) mulaiCetak();
+                    }, { once: true });
+
+                    img.addEventListener('error', function () {
+                        selesai++;
+                        if (selesai === gambar.length) mulaiCetak();
+                    }, { once: true });
                 }
             });
-
-            const feedback = document.getElementById('feedback-refleksi');
-            feedback.classList.remove('hidden');
-            if (semuaTerisi) {
-                feedback.style.background = '#dcfce7';
-                feedback.style.color = '#166534';
-                feedback.textContent = '✅ Lembar refleksi berhasil disimpan. Terima kasih atas komitmen belajarmu!';
-            } else {
-                feedback.style.background = '#fee2e2';
-                feedback.style.color = '#991b1b';
-                feedback.textContent = '⚠️ Mohon isi kedua kolom refleksi terlebih dahulu sebelum menyimpan.';
-            }
-        }
-
-        function updateNamaSertifikat() {
-            const input = document.getElementById('input-nama-sertifikat');
-            const display = document.getElementById('display-nama-sertifikat');
-            const nama = input.value.trim();
-            if (nama === '') {
-                input.style.borderColor = '#ef4444';
-                input.focus();
-                return;
-            }
-            input.style.borderColor = '#cbd5e1';
-            display.textContent = nama;
-        }
-
-        function cetakSertifikatPengguna() {
-            const namaTerisi = document.getElementById('display-nama-sertifikat').textContent.trim();
-            if (namaTerisi === '' || namaTerisi === '[ NAMA PESERTA DIDIK ]') {
-                alert('Silakan ketik nama lengkap Anda dan klik "Terapkan" terlebih dahulu sebelum mencetak sertifikat.');
-                document.getElementById('input-nama-sertifikat').focus();
-                return;
-            }
-
-            const areaSertifikat = document.getElementById('cetak-area-sertifikat').outerHTML;
-            const jendelaCetak = window.open('', '_blank', 'width=900,height=650');
-            if (!jendelaCetak) {
-                alert('Popup diblokir oleh browser. Mohon izinkan popup untuk situs ini agar sertifikat dapat dicetak/diunduh.');
-                return;
-            }
-            jendelaCetak.document.write(
-                '<html><head><title>Sertifikat - ' + namaTerisi + '</title>' +
-                '<style>body{margin:0;padding:20px;font-family:Arial,sans-serif;display:flex;justify-content:center;}' +
-                '#cetak-area-sertifikat{width:800px !important;}' +
-                '@media print{body{padding:0;}}' +
-                '</style></head><body>' +
-                areaSertifikat + '</body></html>'
-            );
-            jendelaCetak.document.close();
-            jendelaCetak.onload = function () {
-                jendelaCetak.focus();
-                jendelaCetak.print();
-            };
-        }
+        }).catch(function () {
+            mulaiCetak();
+        });
+    } else {
+        mulaiCetak();
+    }
+}
 
         // FUNGSI EXPANDABLE CARD BUKA-TUTUP MATERI
         // Catatan: judul (dan gambar bila ada) berada di dalam tombol/trigger sehingga TETAP TAMPIL
@@ -3350,58 +5318,161 @@ updatePaginationUI();
         }, 100);
     }
 // FUNGSI PERIKSA TIMELINE DENGAN AGENT 2 & AGENT 3
-    function periksaUrutanTimeline(containerId, feedbackId) {
-        const container = document.getElementById(containerId);
-        const feedback = document.getElementById(feedbackId);
-        const items = container.querySelectorAll('.drag-item');
-        
-        let benar = true;
-        let urutanUser = [];
+   // =========================================================
+// FUNGSI PERIKSA TIMELINE MISI 1
+// Versi aman — tidak mengubah navigasi
+// =========================================================
+function periksaUrutanTimeline(containerId, feedbackId) {
 
-        items.forEach((item, index) => {
-            const urutanSeharusnya = index + 1;
-            const urutanItem = parseInt(item.getAttribute('data-urutan'));
-            urutanUser.push(urutanItem);
-            
-            if (urutanItem !== urutanSeharusnya) {
-                benar = false;
-            }
-        });
+    const container = document.getElementById(containerId);
+    const feedback = document.getElementById(feedbackId);
 
-        if (benar) {
-            mainkanSuaraBenar();
-            feedback.innerHTML = `
-                <div style="background: rgba(34, 197, 94, 0.2); border: 1.5px solid #22c55e; border-radius: 0.75rem; padding: 0.75rem; display: flex; align-items: center; gap: 0.75rem; margin-top: 0.5rem;">
-                    <img src="images/agent_2.png" alt="Agent Benar" style="height: 3.5rem; width: auto; flex-shrink: 0;">
-                    <div>
-                        <div style="font-weight: 800; color: #4ade80; font-size: 0.85rem;">Luar Biasa! Jawabanmu Tepat Sekali! 🎉</div>
-                        <div style="font-size: 0.75rem; color: #e2e8f0;">Urutan era teknologi broadcasting sudah benar dari Era Analog ➔ Era Digital ➔ Era Internet & AI.</div>
-                    </div>
-                </div>
-            `;
-        } else  {
-            mainkanSuaraSalah();
-            feedback.innerHTML = `
-                <div style="background: rgba(239, 68, 68, 0.2); border: 1.5px solid #ef4444; border-radius: 0.75rem; padding: 0.75rem; display: flex; align-items: center; gap: 0.75rem; margin-top: 0.5rem;">
-                    <img src="images/agent_3.png" alt="Agent Salah" style="height: 3.5rem; width: auto; flex-shrink: 0;">
-                    <div>
-                        <div style="font-weight: 500; color: #f87171; font-size: 0.85rem;">Sayang Sekali, Urutan Belum Tepat! 😅</div>
-                        <div style="font-size: 0.75rem; color: #e2e8f0;">Coba seret kembali kotak era agar berurutan dari teknologi tertua ke yang paling modern, ya!</div>
-                    </div>
-                </div>
-            `;
+    if (!container) return;
+
+    const items = Array.from(
+        container.querySelectorAll('.drag-item')
+    );
+
+    let benar = true;
+
+    items.forEach((item, index) => {
+
+        const urutanSeharusnya = String(index + 1);
+        const urutanItem = item.getAttribute('data-urutan');
+
+        // Hapus status warna sebelumnya
+        item.classList.remove(
+            'urutan-benar',
+            'urutan-salah'
+        );
+
+        // =================================================
+        // PENTING:
+        // Tambahkan class warna pada SETIAP kartu
+        // =================================================
+        if (urutanItem === urutanSeharusnya) {
+
+            item.classList.add('urutan-benar');
+
+        } else {
+
+            item.classList.add('urutan-salah');
+            benar = false;
         }
+    });
+
+    // ==========================================
+    // FEEDBACK DI BAWAH TIMELINE
+    // ==========================================
+
+    if (!feedback) return;
+
+    if (benar) {
+
+        mainkanSuaraBenar();
+
+        feedback.innerHTML = `
+            <div style="
+                background: rgba(34, 197, 94, 0.20);
+                border: 1px solid rgba(34, 197, 94, 0.65);
+                border-radius: 0.6rem;
+                padding: 0.55rem 0.7rem;
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                margin-top: 0.4rem;
+            ">
+
+                <img
+                    src="images/agent_y.png"
+                    alt="Agent Benar"
+                    style="
+                        height: 3rem;
+                        width: auto;
+                        flex-shrink: 0;
+                    "
+                >
+
+                <div>
+                    <div style="
+                        font-weight: 800;
+                        color: #4ade80;
+                        font-size: 11pt;
+                    ">
+                        🎉 Luar Biasa! Urutanmu benar!
+                    </div>
+
+                    <div style="
+                        color: #dcfce7;
+                        font-size: 10pt;
+                        line-height: 1.35;
+                    ">
+                        Era Analog → Era Digital → Era Internet & AI.
+                    </div>
+                </div>
+
+            </div>
+        `;
+
+    } else {
+
+        mainkanSuaraSalah();
+
+        feedback.innerHTML = `
+            <div style="
+                background: rgba(239, 68, 68, 0.20);
+                border: 1px solid rgba(239, 68, 68, 0.65);
+                border-radius: 0.6rem;
+                padding: 0.55rem 0.7rem;
+                display: flex;
+                align-items: center;
+                gap: 0.6rem;
+                margin-top: 0.4rem;
+            ">
+
+                <img
+                    src="images/agent_n.png"
+                    alt="Agent Salah"
+                    style="
+                        height: 3rem;
+                        width: auto;
+                        flex-shrink: 0;
+                    "
+                >
+
+                <div>
+                    <div style="
+                        font-weight: 800;
+                        color: #f87171;
+                        font-size: 11pt;
+                    ">
+                        ❌ Urutan belum tepat.
+                    </div>
+
+                    <div style="
+                        color: #fee2e2;
+                        font-size: 10pt;
+                        line-height: 1.35;
+                    ">
+                        Susun kembali dari teknologi paling lama
+                        menuju teknologi paling modern.
+                    </div>
+                </div>
+
+            </div>
+        `;
     }
+}
 // Fungsi Membuka Gambar Zoom
 function perbesarGambar(srcGambar) {
     const modal = document.getElementById('modal-zoom-gambar');
     const imgTarget = document.getElementById('img-zoom-target');
+
     if (modal && imgTarget) {
         imgTarget.src = srcGambar;
         modal.style.display = 'flex';
     }
 }
-
 // Fungsi Menutup Gambar Zoom
 function tutupGambarZoom() {
     const modal = document.getElementById('modal-zoom-gambar');
@@ -3479,72 +5550,213 @@ function pilihTindakanSimulasi(isBenar) {
         `;
     }
 }
+
 // FUNGSI PERIKSA GREEN CHALLENGE (MISI 4)
 function periksaGreenChallengeMisi4() {
-    const q1 = document.getElementById('gc-misi4-1').value;
-    const q2 = document.getElementById('gc-misi4-2').value;
-    const q3 = document.getElementById('gc-misi4-3').value;
+
+    const q1 = document.getElementById('gc-misi4-1');
+    const q2 = document.getElementById('gc-misi4-2');
+    const q3 = document.getElementById('gc-misi4-3');
     const feedbackBox = document.getElementById('feedback-gc-misi4');
 
-    if (!feedbackBox) return;
+    if (!q1 || !q2 || !q3 || !feedbackBox) return;
 
-    // Jika belum semua pilihan diisi
-    if (!q1 || !q2 || !q3) {
+    // =====================================================
+    // TUNGGU SAMPAI SEMUA SOAL SELESAI DIJAWAB
+    // =====================================================
+
+    if (q1.value === '' || q2.value === '' || q3.value === '') {
+
+        // Selama belum lengkap:
+        // semua kotak tetap pada warna awal
+        [q1, q2, q3].forEach(function(select) {
+
+            const kotakSoal = select.parentElement;
+
+            if (kotakSoal) {
+                kotakSoal.style.backgroundColor =
+                    'rgba(255,255,255,0.06)';
+
+                kotakSoal.style.borderColor =
+                    'rgba(255,255,255,0.12)';
+            }
+        });
+
+        // Feedback juga belum ditampilkan
         feedbackBox.innerHTML = '';
+
         return;
     }
 
-    // Kunci Jawaban: Soal 1 = 'benar', Soal 2 = 'salah', Soal 3 = 'benar'
-    const isQ1Correct = (q1 === 'benar');
-    const isQ2Correct = (q2 === 'salah');
-    const isQ3Correct = (q3 === 'benar');
 
-    // Jika Semua Benar
-    if (isQ1Correct && isQ2Correct && isQ3Correct) {
+    // =====================================================
+    // SEMUA SOAL SUDAH DIJAWAB
+    // SEKARANG BARU EVALUASI DAN MEMBERI WARNA
+    // =====================================================
+
+    const soal = [
+        {
+            select: q1,
+            jawabanBenar: 'benar'
+        },
+        {
+            select: q2,
+            jawabanBenar: 'salah'
+        },
+        {
+            select: q3,
+            jawabanBenar: 'benar'
+        }
+    ];
+
+
+    let jumlahBenar = 0;
+
+
+    soal.forEach(function(item) {
+
+        const select = item.select;
+        const kotakSoal = select.parentElement;
+
+        if (!kotakSoal) return;
+
+        kotakSoal.style.transition =
+            'background-color 0.25s ease, border-color 0.25s ease';
+
+        // =================================================
+        // JAWABAN BENAR → HIJAU TRANSPARAN
+        // =================================================
+
+        if (select.value === item.jawabanBenar) {
+
+            jumlahBenar++;
+
+            kotakSoal.style.backgroundColor =
+                'rgba(34,197,94,0.22)';
+
+            kotakSoal.style.borderColor =
+                'rgba(34,197,94,0.75)';
+        }
+
+        // =================================================
+        // JAWABAN SALAH → MERAH TRANSPARAN
+        // =================================================
+
+        else {
+
+            kotakSoal.style.backgroundColor =
+                'rgba(239,68,68,0.22)';
+
+            kotakSoal.style.borderColor =
+                'rgba(239,68,68,0.75)';
+        }
+    });
+
+
+    // =====================================================
+    // FEEDBACK SETELAH SEMUA SOAL DIJAWAB
+    // =====================================================
+
+    if (jumlahBenar === 3) {
+
         mainkanSuaraBenar();
+
         feedbackBox.innerHTML = `
-            <div style="background: rgba(34, 197, 94, 0.25); border: 1.5px solid #22c55e; border-radius: 0.55rem; padding: 0.5rem; display: flex; align-items: center; gap: 0.65rem; margin-top: 0.35rem;">
-                <img src="images/agent_y.png" alt="Agent Benar" style="height: 3.2rem; width: auto; flex-shrink: 0;">
+            <div style="
+                background:rgba(34,197,94,0.25);
+                border:1.5px solid #22c55e;
+                border-radius:0.55rem;
+                padding:0.5rem;
+                display:flex;
+                align-items:center;
+                gap:0.65rem;
+                margin-top:0.35rem;
+            ">
+
+                <img
+                    src="images/agent_y.png"
+                    alt="Agent Benar"
+                    style="
+                        height:3.2rem;
+                        width:auto;
+                        flex-shrink:0;
+                    "
+                >
+
                 <div>
-                    <div style="font-weight: 800; color: #ffffff; font-size: 0.8rem;">Luar Biasa! Klasifikasi Tepat! 🎉</div>
-                    <div style="font-size: 0.7rem; color: #ffffff; line-height: 1.3; margin-top: 0.1rem;">
-                        Kamu sudah sangat memahami prinsip efisiensi energi, paperless, dan reuse dalam Green Broadcasting!
+                    <div style="
+                        font-weight:800;
+                        color:#ffffff;
+                        font-size:0.8rem;
+                    ">
+                        Luar Biasa! Klasifikasi Tepat! 🎉
+                    </div>
+
+                    <div style="
+                        font-size:0.7rem;
+                        color:#ffffff;
+                        line-height:1.3;
+                        margin-top:0.1rem;
+                    ">
+                        Kamu sudah sangat memahami prinsip efisiensi energi,
+                        paperless, dan reuse dalam Green Broadcasting!
                     </div>
                 </div>
+
             </div>
         `;
-    } 
-    // Jika Semua Salah
-    else if (!isQ1Correct && !isQ2Correct && !isQ3Correct) {
+
+    } else {
+
         mainkanSuaraSalah();
+
         feedbackBox.innerHTML = `
-            <div style="background: rgba(239, 68, 68, 0.25); border: 1.5px solid #ef4444; border-radius: 0.55rem; padding: 0.5rem; display: flex; align-items: center; gap: 0.65rem; margin-top: 0.35rem;">
-                <img src="images/agent_n.png" alt="Agent Salah" style="height: 3.2rem; width: auto; flex-shrink: 0;">
+            <div style="
+                background:rgba(239,68,68,0.25);
+                border:1.5px solid #ef4444;
+                border-radius:0.55rem;
+                padding:0.5rem;
+                display:flex;
+                align-items:center;
+                gap:0.65rem;
+                margin-top:0.35rem;
+            ">
+
+                <img
+                    src="images/agent_n.png"
+                    alt="Agent Salah"
+                    style="
+                        height:3.2rem;
+                        width:auto;
+                        flex-shrink:0;
+                    "
+                >
+
                 <div>
-                    <div style="font-weight: 800; color: #ffffff; font-size: 0.8rem;">Pilihan Belum Tepat! 😅</div>
-                    <div style="font-size: 0.7rem; color: #ffffff; line-height: 1.3; margin-top: 0.1rem;">
-                        Semua jawabanmu masih terbalik. Cermati kembali mana aksi yang menghemat energi dan yang pemborosan.
+                    <div style="
+                        font-weight:800;
+                        color:#ffffff;
+                        font-size:0.8rem;
+                    ">
+                        Masih Ada Klasifikasi yang Belum Tepat! 😅
+                    </div>
+
+                    <div style="
+                        font-size:0.7rem;
+                        color:#ffffff;
+                        line-height:1.3;
+                        margin-top:0.1rem;
+                    ">
+                        Periksa kembali kotak soal yang berwarna merah,
+                        lalu sesuaikan kategori tindakan produksinya.
                     </div>
                 </div>
-            </div>
-        `;
-    } 
-    // Jika Sebagian Salah (Perlu Diulang / Agent 5)
-    else {
-        mainkanSuaraSalah();
-        feedbackBox.innerHTML = `
-            <div style="background: rgba(245, 158, 11, 0.25); border: 1.5px solid #f59e0b; border-radius: 0.55rem; padding: 0.5rem; display: flex; align-items: center; gap: 0.65rem; margin-top: 0.35rem;">
-                <img src="images/agent_5.png" alt="Agent Evaluasi (Agent 5)" style="height: 3.2rem; width: auto; flex-shrink: 0;">
-                <div>
-                    <div style="font-weight: 800; color: #ffffff; font-size: 0.8rem;">Ada yang Perlu Diulang! 🔄</div>
-                    <div style="font-size: 0.7rem; color: #ffffff; line-height: 1.3; margin-top: 0.1rem;">
-                        Sebagian pilihanmu sudah bagus, tapi ada aksi yang belum tepat. Evaluasi dan coba perbaiki lagi ya!
-                    </div>
-                </div>
+
             </div>
         `;
     }
 }
+
     </script>
 <audio id="sfx-klik" src="sound/tombol_pilihan.mp3" preload="auto"></audio>
 <audio id="sfx-benar" src="sound/jawaban_benar.mp3" preload="auto"></audio>
